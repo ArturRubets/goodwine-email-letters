@@ -490,35 +490,17 @@
     <!-- Styles -->
     <style type="text/css">
       * {
-        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sand-serif';
+        font-family: 'Helvetica', 'Arial', 'sand-serif';
         font-style: normal;
         color: #000000;
       }
 
       table {
         font-size: 16px;
-        line-height: 24px;
+        line-height: 120%;
       }
 
-      .content-header {
-        font-size: 32px;
-        line-height: 40px;
-        letter-spacing: -0.02em;
-        font-weight: bold;
-        font-style: normal;
-        padding-bottom: 16px;
-      }
-
-      .header-welcome {
-        font-size: 32px;
-        line-height: 40px;
-        letter-spacing: -0.02em;
-        font-weight: bold;
-        font-style: normal;
-        padding-bottom: 16px;
-      }
-
-      .remove-desctop {
+      .remove-desktop {
         display: none !important;
         mso-hide: all !important;
         width: 0 !important;
@@ -560,16 +542,15 @@
         }
       }
 
-      @media screen and (max-width: 600px) {
-      }
-
+      /* Mobile styles */
       @media screen and (max-width: 425px) {
-      }
+        .logo {
+          padding-top: 40px !important;
+        }
 
-      @media screen and (max-width: 376px) {
-      }
-
-      @media screen and (max-width: 320px) {
+        .logo-dash-container {
+          padding-bottom: 40px !important;
+        }
       }
     </style>
     <!-- Media queries -->
@@ -624,12 +605,12 @@
               <!-- light -->
               <td
                 width="600"
-                class="remove-darkmode"
-                style="width: 600px; text-align: center; padding: 45px 0 45px 0"
+                class="logo remove-darkmode"
+                style="width: 600px; text-align: center; padding: 20px 0 20px 0"
                 align="center"
               >
                 <a
-                  href="https://goodwine.com.ua/?utm_source=info&utm_medium=email&utm_campaign=georgia_wide_tour_05082021"
+                  href="https://goodwine.com.ua"
                   target="_blank"
                   mc-deep-link="false"
                 >
@@ -645,10 +626,11 @@
               <!-- dark -->
               <td
                 width="600"
-                class="show-darkmode"
+                class="logo show-darkmode"
                 style="
                   width: 600px;
                   text-align: center;
+                  padding: 20px 0 20px 0;
                   mso-hide: all;
                   display: none;
                   width: 0;
@@ -657,7 +639,7 @@
                 align="center"
               >
                 <a
-                  href="https://goodwine.com.ua/?utm_source=info&utm_medium=email&utm_campaign=georgia_wide_tour_05082021"
+                  href="https://goodwine.com.ua"
                   target="_blank"
                   mc-deep-link="false"
                 >
@@ -673,14 +655,55 @@
             <!-- logo -->
 
             <tr>
-              <td class="header-welcome" style="width: 600px">
-                <p style="text-align: center">
-                  Вітаємо, <br />
-                  %%FirstName%%!
+              <td class="logo-dash-container" style="padding-bottom: 20px">
+                <div
+                  class="logo-dash"
+                  style="
+                    background-color: black;
+                    height: 1px;
+                    margin: 0 auto;
+                    max-width: 379px;
+                    width: 80%;
+                  "
+                ></div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="height: 60px"></td>
+            </tr>
+
+            <tr>
+              <td
+                style="
+                  font-size: 30px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 114%;
+                  padding-bottom: 40px;
+                  text-align: center;
+                  width: 600px;
+                "
+              >
+                Вітаємо, Луїза!
+              </td>
+            </tr>
+
+            <tr>
+              <td style="width: 600px; padding-bottom: 60px">
+                <p style="margin: 0 auto; text-align: center; width: 83%">
+                  Упродовж минулого року ви приєдналися до програми лояльності
+                  goodwine, це для нас вкрай важливо, бо нам хочеться вірити, що
+                  <span style="color: #1b1b1b; font-weight: bold"
+                    >наші гості — не просто гості, а наші друзі,</span
+                  >
+                  з якими ми ділимося новинами, яким час від часу даруємо
+                  подарунки.
                 </p>
               </td>
             </tr>
 
+            <!-- 
             <tr>
               <td
                 style="width: 600px; padding-left: 7.33%; padding-right: 7.33%"
@@ -860,7 +883,7 @@
                 </a>
               </td>
             </tr>
-
+ -->
             <!-- Content -->
 
             <!-- facebook instagram -->
