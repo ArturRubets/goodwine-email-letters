@@ -460,8 +460,8 @@
           display: table-row !important;
         }
 
-        .body {
-          background-color: #292f30 !important;
+        body {
+          background-color: #262524 !important;
           color: #ffffff !important;
         }
 
@@ -471,19 +471,30 @@
         p,
         td,
         span,
-        a {
+        a,
+        img {
           color: #ffffff !important;
         }
 
-        .remove-darkmode {
+        .remove-dark-mode {
           display: none !important;
           width: 0 !important;
           height: 0 !important;
           mso-hide: all !important;
         }
 
-        .show-darkmode {
+        .show-dark-mode {
           display: table-cell !important;
+        }
+
+        .image-lighter {
+          mix-blend-mode: screen;
+        }
+        .section-dark-mode {
+          background-color: #1c1c1c !important;
+        }
+        .horizontal-line {
+          background-color: white !important;
         }
       }
     </style>
@@ -525,7 +536,7 @@
         .logo {
           padding-top: 40px !important;
         }
-        .logo-dash-container {
+        .horizontal-line-container {
           padding-bottom: 40px !important;
         }
         .title-text {
@@ -554,7 +565,6 @@
         table-layout: fixed;
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
-        background-color: #ffffff;
       "
     >
       <div class="webkit" style="max-width: 600px">
@@ -573,7 +583,6 @@
             color: #333333;
             margin: 0 auto;
             max-width: 600px;
-            background-color: #ffffff;
             padding: 0px;
           "
         >
@@ -585,7 +594,7 @@
               <!-- light -->
               <td
                 width="600"
-                class="logo remove-darkmode"
+                class="logo remove-dark-mode"
                 style="width: 600px; text-align: center; padding: 20px 0 20px 0"
                 align="center"
               >
@@ -596,8 +605,9 @@
                 >
                   <img
                     width="200"
+                    alt="Goodwine"
                     src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/7/d77137ed-fc4a-40f3-994b-f88ae248c5dc.png"
-                    style="display: inline-block; width: 117px"
+                    style="display: inline-block; width: 117px; height: 32px"
                   />
                 </a>
               </td>
@@ -606,7 +616,7 @@
               <!-- dark -->
               <td
                 width="600"
-                class="logo show-darkmode"
+                class="logo show-dark-mode"
                 style="
                   width: 600px;
                   text-align: center;
@@ -624,9 +634,11 @@
                   mc-deep-link="false"
                 >
                   <img
+                    class="image-lighter"
                     width="200"
-                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/bfb418a6-ed79-4333-b5ee-48ae84b1fb78.png"
-                    style="display: inline-block; width: 117px"
+                    src="2https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/310b5509-d221-44df-91b9-b16ea1924c21.png"
+                    alt="Goodwine"
+                    style="display: inline-block; width: 117px; height: 32px"
                   />
                 </a>
               </td>
@@ -635,9 +647,12 @@
             <!-- logo -->
 
             <tr>
-              <td class="logo-dash-container" style="padding-bottom: 20px">
+              <td
+                class="horizontal-line-container"
+                style="padding-bottom: 20px"
+              >
                 <div
-                  class="logo-dash"
+                  class="horizontal-line"
                   style="
                     background-color: black;
                     height: 1px;
@@ -697,6 +712,7 @@
             <tr>
               <td class="desktop">
                 <table
+                  class="section-dark-mode"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
@@ -711,7 +727,12 @@
                       <img
                         src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/abb7ec63-1264-4cab-b379-f7670e67aeea.png"
                         alt="Yellow place"
-                        style="display: block; width: 100%; max-width: 236px"
+                        style="
+                          display: block;
+                          height: 153px;
+                          max-width: 236px;
+                          width: 100%;
+                        "
                       />
                     </td>
                     <td style="padding: 0 5% 0 20px; width: 50%">
@@ -728,6 +749,7 @@
               </td>
               <td class="mobile" style="display: none">
                 <table
+                  class="section-dark-mode"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
@@ -744,9 +766,10 @@
                         alt="Yellow place"
                         style="
                           display: block;
-                          width: 100%;
-                          max-width: 236px;
+                          height: 153px;
                           margin: 0 auto;
+                          max-width: 236px;
+                          width: 100%;
                         "
                       />
                     </td>
@@ -788,10 +811,12 @@
                     </td>
                     <td style="padding: 40px 39px 40px 58px; width: 50%">
                       <img
+                        class="image-lighter"
                         src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/2cc97496-e64b-4934-9679-da67cdf1e0bc.png"
                         alt="It's Ukrainian"
                         style="
                           display: block;
+                          height: 130px;
                           margin: 0 auto;
                           max-width: 194px;
                           width: 100%;
@@ -823,9 +848,11 @@
                   <tr>
                     <td style="padding: 13px 0 60px 0">
                       <img
+                        class="image-lighter"
                         src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/2cc97496-e64b-4934-9679-da67cdf1e0bc.png"
                         alt="It's Ukrainian"
                         style="
+                          height: 130px;
                           display: block;
                           margin: 0 auto;
                           max-width: 194px;
@@ -842,6 +869,7 @@
             <tr>
               <td class="desktop">
                 <table
+                  class="section-dark-mode"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
@@ -879,6 +907,7 @@
               </td>
               <td class="mobile" style="display: none">
                 <table
+                  class="section-dark-mode"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
@@ -895,6 +924,7 @@
                         alt="Fish"
                         style="
                           display: block;
+                          height: 113px;
                           margin: 0 auto;
                           max-width: 106px;
                           width: 100%;
