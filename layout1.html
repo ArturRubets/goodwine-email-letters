@@ -469,7 +469,9 @@
         h2,
         h3,
         p,
-        td {
+        td,
+        span,
+        a {
           color: #ffffff !important;
         }
 
@@ -522,9 +524,11 @@
         .logo {
           padding-top: 40px !important;
         }
-
         .logo-dash-container {
           padding-bottom: 40px !important;
+        }
+        .title-text {
+          width: 76%;
         }
       }
     </style>
@@ -666,7 +670,16 @@
 
             <tr>
               <td style="width: 600px; padding-bottom: 60px">
-                <p style="margin: 0 auto; text-align: center; width: 83%">
+                <p
+                  class="title-text"
+                  style="
+                    margin: 0 auto;
+                    max-width: 498px;
+                    min-width: 287px;
+                    padding: 0 15px;
+                    text-align: center;
+                  "
+                >
                   Упродовж минулого року ви приєдналися до програми лояльності
                   goodwine, це для нас вкрай важливо, бо нам хочеться вірити, що
                   <span style="color: #1b1b1b; font-weight: bold"
