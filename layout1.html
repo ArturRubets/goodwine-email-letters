@@ -499,46 +499,21 @@
         font-size: 16px;
         line-height: 120%;
       }
-
-      .remove-desktop {
-        display: none !important;
-        mso-hide: all !important;
-        width: 0 !important;
-        height: 0 !important;
-      }
-
-      .button {
-        padding-top: 44px;
-        padding-bottom: 44px;
-      }
-
-      .image {
-        padding-top: 44px;
-        padding-bottom: 44px;
-      }
     </style>
     <!-- Styles -->
 
     <!-- Media queries -->
     <style type="text/css">
       @media screen and (max-width: 768px) {
-        .remove-mobile {
+        .desktop {
           display: none !important;
+          height: 0 !important;
           mso-hide: all !important;
           width: 0 !important;
-          height: 0 !important;
         }
 
-        .show-mobile-inline {
-          display: inline !important;
-        }
-
-        .show-mobile-block {
+        .mobile {
           display: block !important;
-        }
-
-        .show-mobile-cell {
-          display: table-cell !important;
         }
       }
 
@@ -700,6 +675,78 @@
                   з якими ми ділимося новинами, яким час від часу даруємо
                   подарунки.
                 </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="desktop">
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="
+                    background-color: #eec352;
+                    max-width: 600px;
+                    width: 100%;
+                  "
+                >
+                  <tr>
+                    <td style="padding: 40px 20px 40px 5%; width: 50%">
+                      <img
+                        src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/567d457f-2fb4-4962-bfe9-cefc4ac19ecf.png"
+                        alt="Yellow place"
+                        style="display: block; width: 100%; max-width: 236px"
+                      />
+                    </td>
+                    <td style="padding: 0 5% 0 20px; width: 50%">
+                      <p>
+                        У нас є
+                        <span style="font-weight: 700"
+                          >власна кав’ярня з обсмажкою кави,</span
+                        >
+                        самої кави — понад 100 видів.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="mobile" style="display: none">
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="
+                    background-color: #eec352;
+                    max-width: 600px;
+                    width: 100%;
+                  "
+                >
+                  <tr>
+                    <td style="padding: 60px 0 20px 0">
+                      <img
+                        src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/567d457f-2fb4-4962-bfe9-cefc4ac19ecf.png"
+                        alt="Yellow place"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 236px;
+                          margin: 0 auto;
+                        "
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 20px 0 60px 0">
+                      <p style="width: 70%; margin: 0 auto">
+                        У нас є
+                        <span style="font-weight: 700"
+                          >власна кав’ярня з обсмажкою кави,</span
+                        >
+                        самої кави — понад 100 видів.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
 
