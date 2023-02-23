@@ -452,19 +452,11 @@
     <!-- Dark light mode -->
     <style type="text/css">
       @media (prefers-color-scheme: dark) {
-        .logo_light {
-          display: none !important;
-        }
-
-        .logo_dark {
-          display: table-row !important;
-        }
-
-        body {
+        body,
+        table {
           background-color: #262524 !important;
           color: #ffffff !important;
         }
-
         h1,
         h2,
         h3,
@@ -475,31 +467,28 @@
         img {
           color: #ffffff !important;
         }
-
-        .remove-dark-mode {
+        .remove-el-d-m {
           display: none !important;
-          width: 0 !important;
           height: 0 !important;
           mso-hide: all !important;
+          width: 0 !important;
         }
-
-        .show-dark-mode {
+        .show-table-cell-d-m {
           display: table-cell !important;
         }
-
-        .image-mix-screen {
+        .image-mix-screen-d-m {
           mix-blend-mode: screen;
         }
-        .image-mix-difference {
+        .image-mix-difference-d-m {
           mix-blend-mode: difference;
         }
-        .darker-section {
+        .darker-section-d-m {
           background-color: #1c1c1c !important;
         }
-        .horizontal-line {
+        .horizontal-line-d-m {
           background-color: #ffffff !important;
         }
-        .button {
+        .button-d-m {
           border-color: #ffffff !important;
         }
       }
@@ -538,7 +527,7 @@
         .logo {
           padding-top: 40px !important;
         }
-        .horizontal-line-container {
+        .horizontal-line-d-m-container {
           padding-bottom: 40px !important;
         }
       }
@@ -582,25 +571,27 @@
         <table
           class="outer"
           align="center"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
           width="600"
           style="
             border-spacing: 0;
+            color: #000000;
             font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sand-serif';
-            color: #333333;
             margin: 0 auto;
             max-width: 600px;
             padding: 0px;
+            width: 100%;
           "
         >
           <tbody>
             <!-- Logo section-->
-            <tr style="width: 100%">
-              <!-- light -->
+            <tr>
+              <!-- Light mode -->
               <td
-                width="600"
-                class="logo remove-dark-mode"
-                style="width: 600px; text-align: center; padding: 20px 0 20px 0"
-                align="center"
+                class="logo remove-el-d-m"
+                style="text-align: center; padding: 20px 15px"
               >
                 <a
                   href="https://goodwine.com.ua"
@@ -608,29 +599,16 @@
                   mc-deep-link="false"
                 >
                   <img
-                    width="200"
                     alt="Goodwine"
                     src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/7/d77137ed-fc4a-40f3-994b-f88ae248c5dc.png"
-                    style="display: inline-block; width: 117px; height: 32px"
+                    style="display: inline-block; height: 32px; width: 117px"
                   />
                 </a>
               </td>
-              <!-- light -->
-
-              <!-- dark -->
+              <!-- Dark mode -->
               <td
-                width="600"
-                class="logo show-dark-mode"
-                style="
-                  width: 600px;
-                  text-align: center;
-                  padding: 20px 0 20px 0;
-                  mso-hide: all;
-                  display: none;
-                  width: 0;
-                  height: 0;
-                "
-                align="center"
+                class="logo show-table-cell-d-m"
+                style="text-align: center; display: none; padding: 20px 15px"
               >
                 <a
                   href="https://goodwine.com.ua"
@@ -638,28 +616,26 @@
                   mc-deep-link="false"
                 >
                   <img
-                    class="image-mix-screen"
-                    width="200"
+                    class="image-mix-screen-d-m"
                     src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/310b5509-d221-44df-91b9-b16ea1924c21.png"
                     alt="Goodwine"
-                    style="display: inline-block; width: 117px; height: 32px"
+                    style="display: inline-block; height: 32px; width: 117px"
                   />
                 </a>
               </td>
-              <!-- dark -->
             </tr>
 
             <tr>
               <td
-                class="horizontal-line-container"
-                style="padding-bottom: 20px"
+                class="horizontal-line-d-m-container"
+                style="padding-bottom: 20px; text-align: center"
               >
                 <div
-                  class="horizontal-line"
+                  class="horizontal-line-d-m"
                   style="
                     background-color: #000000;
+                    display: inline-block;
                     height: 1px;
-                    margin: 0 auto;
                     max-width: 379px;
                     width: 80%;
                   "
@@ -672,31 +648,30 @@
             </tr>
 
             <tr>
-              <td
-                style="
-                  font-size: 30px;
-                  font-style: normal;
-                  font-weight: 700;
-                  line-height: 114%;
-                  padding-bottom: 40px;
-                  text-align: center;
-                  width: 600px;
-                "
-              >
-                Вітаємо,
-                <span style="text-transform: capitalize">%%FirstName%%</span>!
+              <td style="padding: 0 15px 40px; text-align: center">
+                <p
+                  style="
+                    display: inline-block;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 114%;
+                  "
+                >
+                  Вітаємо,
+                  <span style="text-transform: capitalize">%%FirstName%%</span>!
+                </p>
               </td>
             </tr>
 
             <tr>
-              <td style="width: 600px; padding: 0 15px 60px">
+              <td style="padding: 0 15px 60px; text-align: center">
                 <p
                   class="title-text"
                   style="
-                    margin: 0 auto;
+                    display: inline-block;
                     max-width: 498px;
                     min-width: 287px;
-                    text-align: center;
                   "
                 >
                   Упродовж минулого року ви приєдналися до програми лояльності
@@ -714,7 +689,7 @@
             <tr>
               <td class="desktop">
                 <table
-                  class="darker-section"
+                  class="darker-section-d-m"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
@@ -725,12 +700,18 @@
                   "
                 >
                   <tr>
-                    <td style="padding: 40px 20px 40px 5%; width: 50%">
+                    <td
+                      style="
+                        text-align: center;
+                        padding: 40px 20px 40px 5%;
+                        width: 50%;
+                      "
+                    >
                       <img
                         src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/abb7ec63-1264-4cab-b379-f7670e67aeea.png"
                         alt="Yellow place"
                         style="
-                          display: block;
+                          display: inline-block;
                           height: 153px;
                           max-width: 236px;
                           width: 100%;
@@ -751,7 +732,7 @@
               </td>
               <td class="mobile" style="display: none">
                 <table
-                  class="darker-section"
+                  class="darker-section-d-m"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
@@ -762,14 +743,13 @@
                   "
                 >
                   <tr>
-                    <td style="padding: 60px 0 20px 0">
+                    <td style="padding: 60px 15px 20px; text-align: center">
                       <img
                         src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/abb7ec63-1264-4cab-b379-f7670e67aeea.png"
                         alt="Yellow place"
                         style="
-                          display: block;
+                          display: inline-block;
                           height: 153px;
-                          margin: 0 auto;
                           max-width: 236px;
                           width: 100%;
                         "
@@ -777,8 +757,8 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding: 20px 0 60px 0">
-                      <p style="width: 257px; margin: 0 auto">
+                    <td style="padding: 20px 15px 60px; text-align: center">
+                      <p style="display: inline-block; width: 257px">
                         У нас є
                         <span style="font-weight: 700"
                           >власна кав’ярня з обсмажкою кави,</span
@@ -811,15 +791,20 @@
                         >
                       </p>
                     </td>
-                    <td style="padding: 40px 39px 40px 58px; width: 50%">
+                    <td
+                      style="
+                        text-align: center;
+                        padding: 40px 39px 40px 58px;
+                        width: 50%;
+                      "
+                    >
                       <img
-                        class="image-mix-screen"
+                        class="image-mix-screen-d-m"
                         src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/2cc97496-e64b-4934-9679-da67cdf1e0bc.png"
                         alt="It's Ukrainian"
                         style="
-                          display: block;
+                          display: inline-block;
                           height: 130px;
-                          margin: 0 auto;
                           max-width: 194px;
                           width: 100%;
                         "
@@ -836,8 +821,8 @@
                   style="max-width: 600px; width: 100%"
                 >
                   <tr>
-                    <td style="padding: 60px 0 13px 0">
-                      <p style="margin: 0 auto; width: 218px">
+                    <td style="text-align: center; padding: 60px 15px 13px">
+                      <p style="display: inline-block; width: 218px">
                         Ми привозимо унікальні й
                         <span style="font-weight: 700">органічні продукти</span>
                         від 150
@@ -848,15 +833,14 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding: 13px 0 60px 0">
+                    <td style="text-align: center; padding: 13px 15px 60px">
                       <img
-                        class="image-mix-screen"
+                        class="image-mix-screen-d-m"
                         src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/2cc97496-e64b-4934-9679-da67cdf1e0bc.png"
                         alt="It's Ukrainian"
                         style="
+                          display: inline-block;
                           height: 130px;
-                          display: block;
-                          margin: 0 auto;
                           max-width: 194px;
                           width: 100%;
                         "
@@ -871,7 +855,7 @@
             <tr>
               <td class="desktop">
                 <table
-                  class="darker-section"
+                  class="darker-section-d-m"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
@@ -882,13 +866,19 @@
                   "
                 >
                   <tr>
-                    <td style="padding: 60px 54px 60px 95px; width: 50%">
+                    <td
+                      style="
+                        text-align: center;
+                        padding: 60px 54px 60px 95px;
+                        width: 50%;
+                      "
+                    >
                       <img
+                        class="image-mix-screen-d-m"
                         src="assets/layout1/fish-logo.png"
                         alt="Fish"
                         style="
-                          display: block;
-                          margin: 0 auto;
+                          display: inline-block;
                           max-width: 106px;
                           width: 100%;
                         "
@@ -909,7 +899,7 @@
               </td>
               <td class="mobile" style="display: none">
                 <table
-                  class="darker-section"
+                  class="darker-section-d-m"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
@@ -920,14 +910,14 @@
                   "
                 >
                   <tr>
-                    <td style="padding: 60px 0 30px 0">
+                    <td style="text-align: center; padding: 60px 15px 30px">
                       <img
+                        class="image-mix-screen-d-m"
                         src="assets/layout1/fish-logo.png"
                         alt="Fish"
                         style="
-                          display: block;
+                          display: inline-block;
                           height: 113px;
-                          margin: 0 auto;
                           max-width: 106px;
                           width: 100%;
                         "
@@ -935,8 +925,8 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding: 30px 0 60px 0">
-                      <p style="margin: 0 auto; width: 230px">
+                    <td style="text-align: center; padding: 30px 15px 60px">
+                      <p style="display: inline-block; width: 230px">
                         Ми робимо все можливе, щоб
                         <span style="font-weight: 700"
                           >постачання свіжої риби</span
@@ -951,8 +941,8 @@
             </tr>
 
             <tr>
-              <td style="padding: 40px 15px; width: 600px">
-                <p style="margin: 0 auto; text-align: center; width: 335px">
+              <td style="padding: 40px 15px; text-align: center">
+                <p style="display: inline-block; width: 335px">
                   Кілька слів про відділи, на які ми пропонуємо звернути увагу:
                 </p>
               </td>
@@ -968,22 +958,28 @@
                   style="max-width: 600px; width: 100%"
                 >
                   <tr>
-                    <td style="padding: 20px 34px 10px">
-                      <img
-                        class="image-mix-difference"
-                        src="assets/layout1/gastronomy.jpg"
-                        alt="Gastronomy"
-                        style="
-                          display: block;
-                          height: 296px;
-                          margin: 0 auto;
-                          width: 100%;
-                        "
-                      />
+                    <td style="padding: 20px 34px 10px; text-align: center">
+                      <a
+                        href=""
+                        target="_blank"
+                        mc-deep-link="false"
+                        style="text-decoration: none"
+                      >
+                        <img
+                          class="image-mix-difference-d-m"
+                          src="assets/layout1/gastronomy.jpg"
+                          alt="Gastronomy"
+                          style="
+                            display: inline-block;
+                            height: 296px;
+                            width: 100%;
+                          "
+                        />
+                      </a>
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding: 10px 0 20px">
+                    <td style="padding: 10px 15px 20px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -991,13 +987,13 @@
                         style="text-decoration: none"
                       >
                         <div
-                          class="button"
+                          class="button-d-m"
                           style="
                             border-radius: 8px;
                             border: 1px solid #000000;
+                            display: inline-block;
                             height: 40px;
                             text-align: center;
-                            margin: 0 auto;
                             width: 89px;
                           "
                         >
@@ -1023,23 +1019,29 @@
                   style="max-width: 600px; width: 100%"
                 >
                   <tr>
-                    <td style="padding: 20px 34px 10px">
-                      <img
-                        class="image-mix-difference"
-                        src="assets/layout1/gastronomy-mobile.jpg"
-                        alt="Gastronomy"
-                        style="
-                          display: block;
-                          height: 550px;
-                          margin: 0 auto;
-                          max-width: 326px;
-                          width: 100%;
-                        "
-                      />
+                    <td style="padding: 20px 34px 10px; text-align: center">
+                      <a
+                        href=""
+                        target="_blank"
+                        mc-deep-link="false"
+                        style="text-decoration: none"
+                      >
+                        <img
+                          class="image-mix-difference-d-m"
+                          src="assets/layout1/gastronomy-mobile.jpg"
+                          alt="Gastronomy"
+                          style="
+                            display: inline-block;
+                            height: 550px;
+                            max-width: 326px;
+                            width: 100%;
+                          "
+                        />
+                      </a>
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding: 10px 0 20px">
+                    <td style="padding: 10px 15px 20px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -1047,13 +1049,13 @@
                         style="text-decoration: none"
                       >
                         <div
-                          class="button"
+                          class="button-d-m"
                           style="
                             border-radius: 8px;
                             border: 1px solid #000000;
+                            display: inline-block;
                             height: 40px;
                             text-align: center;
-                            margin: 0 auto;
                             width: 89px;
                           "
                         >
@@ -1083,7 +1085,7 @@
                   style="max-width: 600px; width: 100%"
                 >
                   <tr>
-                    <td style="padding: 20px 34px 10px">
+                    <td style="padding: 20px 34px 10px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -1091,13 +1093,12 @@
                         style="text-decoration: none"
                       >
                         <img
-                          class="image-mix-difference"
+                          class="image-mix-difference-d-m"
                           src="assets/layout1/cooking.jpg"
                           alt="Gastronomy"
                           style="
-                            display: block;
+                            display: inline-block;
                             height: 296px;
-                            margin: 0 auto;
                             width: 100%;
                           "
                         />
@@ -1105,7 +1106,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding: 10px 0 20px">
+                    <td style="padding: 10px 15px 20px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -1113,13 +1114,13 @@
                         style="text-decoration: none"
                       >
                         <div
-                          class="button"
+                          class="button-d-m"
                           style="
                             border-radius: 8px;
                             border: 1px solid #000000;
+                            display: inline-block;
                             height: 40px;
                             text-align: center;
-                            margin: 0 auto;
                             width: 89px;
                           "
                         >
@@ -1145,7 +1146,7 @@
                   style="max-width: 600px; width: 100%"
                 >
                   <tr>
-                    <td style="padding: 20px 34px 10px">
+                    <td style="padding: 20px 34px 10px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -1153,13 +1154,12 @@
                         style="text-decoration: none"
                       >
                         <img
-                          class="image-mix-difference"
+                          class="image-mix-difference-d-m"
                           src="assets/layout1/cooking-mobile.jpg"
                           alt="Gastronomy"
                           style="
-                            display: block;
+                            display: inline-block;
                             height: 550px;
-                            margin: 0 auto;
                             max-width: 326px;
                             width: 100%;
                           "
@@ -1168,7 +1168,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding: 10px 0 20px">
+                    <td style="padding: 10px 15px 20px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -1176,13 +1176,13 @@
                         style="text-decoration: none"
                       >
                         <div
-                          class="button"
+                          class="button-d-m"
                           style="
                             border-radius: 8px;
                             border: 1px solid #000000;
+                            display: inline-block;
                             height: 40px;
                             text-align: center;
-                            margin: 0 auto;
                             width: 89px;
                           "
                         >
@@ -1212,7 +1212,7 @@
                   style="max-width: 600px; width: 100%"
                 >
                   <tr>
-                    <td style="padding: 20px 34px 10px">
+                    <td style="padding: 20px 34px 10px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -1220,13 +1220,12 @@
                         style="text-decoration: none"
                       >
                         <img
-                          class="image-mix-difference"
+                          class="image-mix-difference-d-m"
                           src="assets/layout1/bakery.jpg"
                           alt="Gastronomy"
                           style="
-                            display: block;
+                            display: inline-block;
                             height: 296px;
-                            margin: 0 auto;
                             width: 100%;
                           "
                         />
@@ -1234,7 +1233,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding: 10px 0 20px">
+                    <td style="padding: 10px 15px 20px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -1242,13 +1241,13 @@
                         style="text-decoration: none"
                       >
                         <div
-                          class="button"
+                          class="button-d-m"
                           style="
                             border-radius: 8px;
                             border: 1px solid #000000;
+                            display: inline-block;
                             height: 40px;
                             text-align: center;
-                            margin: 0 auto;
                             width: 89px;
                           "
                         >
@@ -1274,7 +1273,7 @@
                   style="max-width: 600px; width: 100%"
                 >
                   <tr>
-                    <td style="padding: 20px 34px 10px">
+                    <td style="padding: 20px 34px 10px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -1282,13 +1281,12 @@
                         style="text-decoration: none"
                       >
                         <img
-                          class="image-mix-difference"
+                          class="image-mix-difference-d-m"
                           src="assets/layout1/bakery-mobile.jpg"
                           alt="Gastronomy"
                           style="
-                            display: block;
+                            display: inline-block;
                             height: 550px;
-                            margin: 0 auto;
                             max-width: 326px;
                             width: 100%;
                           "
@@ -1297,7 +1295,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding: 10px 0 20px">
+                    <td style="padding: 10px 15px 20px; text-align: center">
                       <a
                         href=""
                         target="_blank"
@@ -1305,13 +1303,13 @@
                         style="text-decoration: none"
                       >
                         <div
-                          class="button"
+                          class="button-d-m"
                           style="
                             border-radius: 8px;
                             border: 1px solid #000000;
+                            display: inline-block;
                             height: 40px;
                             text-align: center;
-                            margin: 0 auto;
                             width: 89px;
                           "
                         >
@@ -1331,187 +1329,97 @@
               </td>
             </tr>
 
-            <!-- 
             <tr>
-              <td
-                style="width: 600px; padding-left: 7.33%; padding-right: 7.33%"
-              >
-                <p style="text-align: center">
-                  Оранж, Супра, Друзі - це Грузія. Сучасна, стильна та міцна в
-                  традиціях. Ми не вперше прямуємо до Грузії. <br />
-                  <br />
-
-                  Їдемо до виноробів:
-                  <a
-                    target="_blank"
-                    mc-deep-link="false"
-                    href="https://goodwine.com.ua/vino.html?dir=asc&id=3&order=price&producer=1789?utm_source=info&utm_medium=email&utm_campaign=georgia_wide_tour_05082021"
-                    style="color: #000; text-decoration: none"
-                  >
-                    Lagvinari</a
-                  >,
-                  <a
-                    target="_blank"
-                    mc-deep-link="false"
-                    href="https://goodwine.com.ua/chinuri-18804.html?utm_source=info&utm_medium=email&utm_campaign=georgia_wide_tour_05082021"
-                    style="color: #000; text-decoration: none"
-                  >
-                    Iago</a
-                  >, Samtavisi Marani,
-                  <a
-                    target="_blank"
-                    mc-deep-link="false"
-                    href="https://goodwine.com.ua/vino.html?country=627&dir=asc&id=3&order=price&producer=3061?utm_source=info&utm_medium=email&utm_campaign=georgia_wide_tour_05082021"
-                    style="color: #000; text-decoration: none"
-                  >
-                    Tchotiashvili</a
-                  >
-                  и
-                  <a
-                    target="_blank"
-                    mc-deep-link="false"
-                    href="https://goodwine.com.ua/vino.html?country=627&dir=asc&id=3&order=price&p=1&producer=1843?utm_source=info&utm_medium=email&utm_campaign=georgia_wide_tour_05082021"
-                    style="color: #000; text-decoration: none"
-                  >
-                    Pheasant`s Tears</a
-                  >. Кожен зі своєю відмінною історією, чекає на нас в гості,
-                  щоб поділитись своєю філософією та стати нам другом.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="image" style="text-align: center; width: 600px">
-                <a
-                  href="https://wide.tours/tours/georgia-kartli-kakheti-winetour?utm_source=info&utm_medium=email&utm_campaign=georgia_wide_tour_05082021"
-                  target="_blank"
-                  mc-deep-link="false"
-                >
-                  <img
-                    width="100%"
-                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/b4a75f16-954d-4583-b9cf-6425d1a9ee56.png"
-                    style="display: inline-block; width: 100%"
-                  />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="width: 600px">
-                <p class="content-header" style="text-align: center">ПЛАН:</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td
-                style="width: 600px; padding-left: 7.33%; padding-right: 7.33%"
-              >
-                <ul
+              <td>
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
                   style="
-                    text-align: center;
-                    list-style-position: inside;
-                    margin: 0;
-                    padding: 0;
+                    background-color: #1b1b1b;
+                    max-width: 600px;
+                    width: 100%;
                   "
                 >
-                  <li>
-                    прогуляємось вулицями Тбілісі в компанії чарівної Даріко,
-                    <br class="remove-mobile" />
-                    що знає всі закутки міста
-                  </li>
-                  <li>
-                    проведем кулінарний майстер-клас разом із шефами
-                    <br class="remove-mobile" />
-                    ресторану Poliphonia
-                  </li>
-                  <li>спробуємо сучасну грузинську кухню з винним пейрінгом</li>
-                  <li>відвідаємо винні регіони Картлі та Кахетію</li>
-                  <li>познайомимось із містом Сігнахі</li>
-                  <li>відпочинемо на ранчо….</li>
-                </ul>
-                <br />
-                <p style="text-align: center">
-                  Та скоріш за все на цьому не зупинимось.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="button" style="text-align: center; width: 600px">
-                <a
-                  href="https://wide.tours/tours/georgia-kartli-kakheti-winetour?utm_source=info&utm_medium=email&utm_campaign=georgia_wide_tour_05082021"
-                  target="_blank"
-                  mc-deep-link="false"
-                >
-                  <img
-                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/3c2efdef-4b3b-466f-9f32-66d562e933d5.png"
-                    style="
-                      display: inline-block;
-                      width: 153px;
-                      vertical-align: bottom;
-                    "
-                  />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td
-                style="
-                  padding-top: 0px;
-                  padding-bottom: 44px;
-                  text-align: center;
-                  padding: 0 7.5% 44px;
-                "
-              >
-                <table width="100%" style="border-spacing: 0">
                   <tr>
-                    <td
-                      style="
-                        background: none;
-                        border: solid 1px rgb(44, 43, 43);
-                        border-width: 1px 0 0 0;
-                      "
-                    ></td>
+                    <td style="padding: 40px 15px 10px; text-align: center">
+                      <p
+                        style="
+                          color: #bfbfbf;
+                          display: inline-block;
+                          max-width: 401px;
+                        "
+                      >
+                        Щоб розповісти про всі наші відділи, нам знадобиться не
+                        один такий лист.
+                        <br />
+                        <br />
+                        Але всьому свій час.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px 15px 10px; text-align: center">
+                      <p
+                        style="
+                          color: #ffffff;
+                          display: inline-block;
+                          font-weight: 700;
+                          max-width: 428px;
+                        "
+                      >
+                        Заходьте до goodwine на Мечнікова та знайомтеся з нашими
+                        продуктами або ж замовляйте доставку:
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px 15px; text-align: center">
+                      <a
+                        href=""
+                        target="_blank"
+                        mc-deep-link="false"
+                        style="color: #ffffff; text-decoration-line: underline"
+                      >
+                        delivery.goodwine.ua
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px 15px 40px; text-align: center">
+                      <a
+                        href=""
+                        target="_blank"
+                        mc-deep-link="false"
+                        style="text-decoration: none"
+                      >
+                        <div
+                          class="button-d-m"
+                          style="
+                            background: #ffffff;
+                            border-radius: 8px;
+                            display: inline-block;
+                            height: 40px;
+                            text-align: center;
+                            width: 89px;
+                          "
+                        >
+                          <span
+                            style="
+                              color: #000000 !important;
+                              font-size: 14px;
+                              font-weight: 700;
+                              line-height: 40px;
+                            "
+                            >деталі</span
+                          >
+                        </div>
+                      </a>
+                    </td>
                   </tr>
                 </table>
               </td>
             </tr>
-
-            <tr>
-              <td style="text-align: center">
-                <p
-                  style="
-                    display: inline-block;
-                    max-width: 178px;
-                    text-align: center;
-                  "
-                >
-                  9-13 вересня
-                  <br /><br />
-                  В супроводі сомельє
-                  <br />
-                  Куц Антона
-                  <br /><br />
-                  1 800 USD / персони
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td
-                class="button"
-                style="padding-bottom: 0px; text-align: center; width: 600px"
-              >
-                <a href="tel:380961196690" target="_blank" mc-deep-link="false">
-                  <img
-                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/f13c3720-83fe-4a17-ac9f-c8a7072665cc.png"
-                    style="display: inline-block; vertical-align: bottom"
-                  />
-                </a>
-              </td>
-            </tr>
- -->
 
             <!-- facebook instagram -->
             <tr>
