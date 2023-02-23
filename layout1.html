@@ -12,7 +12,7 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" />
 
-    <!-- another styles -->
+    <!-- Another styles -->
     <style type="text/css">
       :root {
         color-scheme: light dark;
@@ -342,7 +342,6 @@
         }
       }
     </style>
-    <!-- another styles -->
 
     <!--[if (gte mso 9)|(IE)]>
       <style type="text/css">
@@ -352,104 +351,7 @@
       </style>
     <![endif]-->
 
-    <!-- facebook instagram goodwine logo dark light mode-->
-    <style type="text/css">
-      #fb-inst-logo {
-        width: 72px;
-      }
-
-      #fb-inst-logo-padding {
-        padding: 100px 0 66px 0;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        .facebook-instagram-light-mode-wrapper,
-        .facebook-instagram-light-mode {
-          display: none !important;
-          width: 0 !important;
-          height: 0 !important;
-          mso-hide: all !important;
-        }
-
-        .facebook-instagram-dark-mode {
-          display: block !important;
-          height: 24px !important;
-          width: 24px !important;
-        }
-
-        .facebook-instagram-dark-mode-wrapper {
-          display: table-cell !important;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
-        .facebook-instagram-light-mode-wrapper,
-        .facebook-instagram-light-mode {
-          display: none !important;
-          width: 0 !important;
-          height: 0 !important;
-          mso-hide: all !important;
-        }
-
-        .facebook-instagram-light-mode-wrapper-mobile {
-          display: table-cell !important;
-        }
-
-        .facebook-instagram-light-mode-mobile-instagram {
-          display: block !important;
-          height: 40px !important;
-          width: 40px !important;
-        }
-
-        .facebook-instagram-light-mode-mobile-facebook {
-          display: block !important;
-          height: 40px !important;
-          width: 20px !important;
-        }
-
-        #fb-inst-logo {
-          width: 118px !important;
-        }
-
-        #fb-inst-logo-padding {
-          padding-top: 65px !important;
-        }
-      }
-
-      @media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
-        .facebook-instagram-light-mode-wrapper,
-        .facebook-instagram-light-mode,
-        .facebook-instagram-dark-mode-wrapper,
-        .facebook-instagram-dark-mode,
-        .facebook-instagram-light-mode-wrapper-mobile,
-        .facebook-instagram-light-mode-mobile-instagram,
-        .facebook-instagram-light-mode-mobile-facebook {
-          display: none !important;
-          width: 0 !important;
-          height: 0 !important;
-          mso-hide: all !important;
-        }
-
-        .facebook-instagram-dark-mode-wrapper-mobile {
-          display: table-cell !important;
-        }
-
-        .facebook-instagram-dark-mode-mobile-instagram {
-          display: block !important;
-          height: 40px !important;
-          width: 40px !important;
-        }
-
-        .facebook-instagram-dark-mode-mobile-facebook {
-          display: block !important;
-          height: 40px !important;
-          width: 20px !important;
-        }
-      }
-    </style>
-    <!-- facebook instagram goodwine logo dark light mode-->
-
-    <!-- Dark light mode -->
+    <!-- Dark mode -->
     <style type="text/css">
       @media (prefers-color-scheme: dark) {
         body,
@@ -482,6 +384,10 @@
         .image-darker-d-m {
           filter: brightness(80%);
         }
+        .image-stroke-d-m {
+          background-color: white;
+          border: 0.5px solid white;
+        }
         .darker-section-d-m {
           background-color: #1c1c1c !important;
         }
@@ -493,9 +399,8 @@
         }
       }
     </style>
-    <!-- Dark light mode -->
 
-    <!-- Styles -->
+    <!-- Basic styles -->
     <style type="text/css">
       * {
         box-sizing: border-box;
@@ -508,12 +413,8 @@
         font-size: 16px;
         line-height: 120%;
       }
-    </style>
-    <!-- Styles -->
 
-    <!-- Media queries -->
-    <style type="text/css">
-      /* Tablet styles */
+      /* Tablet size */
       @media screen and (max-width: 768px) {
         .desktop {
           display: none !important;
@@ -530,16 +431,25 @@
         .horizontal-line-d-m-container {
           padding-bottom: 40px !important;
         }
+        .footer {
+          padding-bottom: 25px;
+        }
       }
 
-      /* Mobile styles */
+      @media screen and (max-width: 550px) {
+        .footer .address {
+          max-width: 345px;
+          width: 100%;
+        }
+      }
+
+      /* Mobile size */
       @media screen and (max-width: 425px) {
         .title-text {
           width: 76%;
         }
       }
     </style>
-    <!-- Media queries -->
   </head>
 
   <body
@@ -1263,7 +1173,7 @@
                           max-width: 428px;
                         "
                       >
-                        Заходьте до goodwine на Мечнікова та знайомтеся з нашими
+                        Заходьте до goodwine на Мечникова та знайомтеся з нашими
                         продуктами або ж замовляйте доставку:
                       </p>
                     </td>
@@ -1316,511 +1226,139 @@
               </td>
             </tr>
 
-            <!-- facebook instagram -->
+            <!-- Footer -->
             <tr>
-              <td
-                id="fb-inst-logo-padding"
-                style="padding-top: 100px !important"
-              >
+              <td class="footer">
                 <table
-                  id="fb-inst-logo"
-                  cellspacing="0"
                   cellpadding="0"
-                  align="center"
+                  cellspacing="0"
+                  border="0"
+                  style="max-width: 600px; width: 100%"
                 >
-                  <tbody>
-                    <tr>
-                      <!-- light mode -->
-                      <td
-                        class="facebook-instagram-light-mode-wrapper"
-                        width="24"
-                        style="text-align: left"
+                  <tr>
+                    <td style="padding: 20px 15px 10px">
+                      <!-- Icons -->
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="max-width: 600px; width: 100%"
                       >
-                        <a
-                          href="https://www.instagram.com/goodwine/?hl=ru"
-                          target="_blank"
-                          mc-deep-link="false"
-                        >
-                          <img
-                            class="facebook-instagram-light-mode"
-                            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/7/960f9ac7-1cb7-476e-8209-af3124d2438f.png"
-                            alt=""
-                          />
-                        </a>
-                      </td>
-                      <td
-                        class="facebook-instagram-light-mode-wrapper"
-                        width="24"
-                        style="text-align: right"
-                      >
-                        <a
-                          href="https://www.facebook.com/goodwine.ukraine/?fb_dtsg_ag=AdzX1OrBVoCQ68roGuBAsTaGG5xvjGvpt6eZDR74DJBSRw%3AAdzhH1kv9hRaPEQ1I-NupZNQwwDyilBW5dpXrCkqNnQ-_Q"
-                          target="_blank"
-                          mc-deep-link="false"
-                        >
-                          <img
-                            class="facebook-instagram-light-mode"
-                            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/7/ac94ed75-73a5-4862-9c98-e59b7cd6f5a3.png"
-                            alt=""
-                          />
-                        </a>
-                      </td>
-
-                      <!-- mobile version -->
-                      <td
-                        class="facebook-instagram-light-mode-wrapper-mobile"
-                        width="44"
-                        style="
-                          mso-hide: all;
-                          display: none;
-                          width: 0;
-                          height: 0;
-                          text-align: left;
-                        "
-                      >
-                        <a
-                          href="https://www.instagram.com/goodwine/?hl=ru"
-                          target="_blank"
-                          mc-deep-link="false"
-                        >
-                          <img
-                            class="facebook-instagram-light-mode-mobile-instagram"
-                            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/285f9ee5-8391-42a9-a50a-514afbb38e99.png"
-                            alt=""
-                            style="
-                              mso-hide: all;
-                              display: none;
-                              width: 0;
-                              height: 0;
-                            "
-                          />
-                        </a>
-                      </td>
-                      <td
-                        class="facebook-instagram-light-mode-wrapper-mobile"
-                        width="44"
-                        style="
-                          mso-hide: all;
-                          display: none;
-                          width: 0;
-                          height: 0;
-                          text-align: right;
-                        "
-                      >
-                        <a
-                          href="https://www.facebook.com/goodwine.ukraine/?fb_dtsg_ag=AdzX1OrBVoCQ68roGuBAsTaGG5xvjGvpt6eZDR74DJBSRw%3AAdzhH1kv9hRaPEQ1I-NupZNQwwDyilBW5dpXrCkqNnQ-_Q"
-                          target="_blank"
-                          mc-deep-link="false"
-                        >
-                          <img
-                            class="facebook-instagram-light-mode-mobile-facebook"
-                            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/d653630e-d249-4090-b7d6-72507379fc33.png"
-                            alt=""
-                            style="
-                              mso-hide: all;
-                              display: none;
-                              width: 0;
-                              height: 0;
-                            "
-                          />
-                        </a>
-                      </td>
-                      <!-- mobile version -->
-                      <!-- light mode -->
-
-                      <!-- dark mode -->
-                      <td
-                        class="facebook-instagram-dark-mode-wrapper"
-                        width="24"
-                        style="
-                          mso-hide: all;
-                          display: none;
-                          width: 0;
-                          height: 0;
-                          text-align: left;
-                        "
-                      >
-                        <a
-                          href="https://www.instagram.com/goodwine/?hl=ru"
-                          target="_blank"
-                          mc-deep-link="false"
-                        >
-                          <img
-                            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/45ae96ce-c0dd-416c-8584-d2e068f5a7af.png"
-                            alt=""
-                            style="
-                              mso-hide: all;
-                              display: none;
-                              width: 0;
-                              height: 0;
-                            "
-                          />
-                        </a>
-                      </td>
-                      <td
-                        class="facebook-instagram-dark-mode-wrapper"
-                        width="24"
-                        style="
-                          mso-hide: all;
-                          display: none;
-                          width: 0;
-                          height: 0;
-                          text-align: right;
-                        "
-                      >
-                        <a
-                          href="https://www.facebook.com/goodwine.ukraine/?fb_dtsg_ag=AdzX1OrBVoCQ68roGuBAsTaGG5xvjGvpt6eZDR74DJBSRw%3AAdzhH1kv9hRaPEQ1I-NupZNQwwDyilBW5dpXrCkqNnQ-_Q"
-                          target="_blank"
-                          mc-deep-link="false"
-                        >
-                          <img
-                            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/daccd457-db9a-47f0-b420-f22e0d3ab4c2.png"
-                            alt=""
-                            style="
-                              mso-hide: all;
-                              display: none;
-                              width: 0;
-                              height: 0;
-                            "
-                          />
-                        </a>
-                      </td>
-
-                      <!-- mobile version -->
-                      <td
-                        class="facebook-instagram-dark-mode-wrapper-mobile"
-                        width="44"
-                        style="
-                          mso-hide: all;
-                          display: none;
-                          width: 0;
-                          height: 0;
-                          text-align: left;
-                        "
-                      >
-                        <a
-                          href="https://www.instagram.com/goodwine/?hl=ru"
-                          target="_blank"
-                          mc-deep-link="false"
-                        >
-                          <img
-                            class="facebook-instagram-dark-mode-mobile-instagram"
-                            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/d7ae1775-f22b-47b4-8e42-d804574c75ef.png"
-                            alt=""
-                            style="
-                              mso-hide: all;
-                              display: none;
-                              width: 0;
-                              height: 0;
-                            "
-                          />
-                        </a>
-                      </td>
-                      <td
-                        class="facebook-instagram-dark-mode-wrapper-mobile"
-                        width="44"
-                        style="
-                          mso-hide: all;
-                          display: none;
-                          width: 0;
-                          height: 0;
-                          text-align: right;
-                        "
-                      >
-                        <a
-                          href="https://www.facebook.com/goodwine.ukraine/?fb_dtsg_ag=AdzX1OrBVoCQ68roGuBAsTaGG5xvjGvpt6eZDR74DJBSRw%3AAdzhH1kv9hRaPEQ1I-NupZNQwwDyilBW5dpXrCkqNnQ-_Q"
-                          target="_blank"
-                          mc-deep-link="false"
-                        >
-                          <img
-                            class="facebook-instagram-dark-mode-mobile-facebook"
-                            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/b0021088-a525-434e-a6ed-f440db21231b.png"
-                            alt=""
-                            style="
-                              mso-hide: all;
-                              display: none;
-                              width: 0;
-                              height: 0;
-                            "
-                          />
-                        </a>
-                      </td>
-                      <!-- mobile version -->
-                      <!-- dark mode -->
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <!-- facebook instagram -->
-
-            <!-- Apps market -->
-            <tr>
-              <td
-                class="right-sidebar"
-                style="
-                  padding-top: 0px;
-                  padding-bottom: 60px;
-                  padding-right: 0;
-                  padding-left: 0;
-                  background-color: #ffffff;
-                  text-align: center;
-                  font-size: 0;
-                "
-              >
-                <!--[if (gte mso 9)|(IE)]>
-                    <table width="100%" style="border-spacing:0;font-family: 'Helvetica Neue','Helvetica', 'Arial', 'sand-serif';color:#333333;">
                         <tr>
-                            <td width="300"
-                                style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;">
-                    <![endif]-->
-                <table
-                  class="column left"
-                  width="300"
-                  style="
-                    border-spacing: 0;
-                    font-family: 'Helvetica Neue', 'Helvetica', 'Arial',
-                      'sand-serif';
-                    color: #333333;
-                    width: 100%;
-                    display: inline-block;
-                    vertical-align: middle;
-                    max-width: 300px;
-                  "
-                >
-                  <tbody>
-                    <tr>
-                      <td
-                        class="inner contents1"
-                        align="center"
-                        style="
-                          padding-top: 7px;
-                          padding-bottom: 0px;
-                          padding-right: 0px;
-                          padding-left: 0px;
-                          font-size: 14px;
-                          text-align: center !important;
-                          max-width: 300px;
-                        "
-                      >
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="center"
-                          border="0"
-                          width="300"
-                        >
-                          <tbody>
-                            <tr>
-                              <td
-                                width="180"
-                                style="text-align: center; padding: 0 12px"
-                              >
-                                <a
-                                  href="https://itunes.apple.com/ua/app/goodwine-ukraine/id1279902150?mt=8"
-                                  target="_blank"
-                                  mc-deep-link="false"
-                                  ><img
-                                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/7/8c316fe3-f2ce-4f04-8353-ae5bd05a5939.png"
-                                    alt=""
-                                /></a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!--[if (gte mso 9)|(IE)]>
+                          <td>
+                            <!-- Dynamic size column -->
+                          </td>
+                          <td style="padding: 0 6px; width: 20px">
+                            <a
+                              href="https://www.facebook.com/goodwine.ukraine"
+                              target="_blank"
+                              mc-deep-link="false"
+                              style="text-decoration: none"
+                            >
+                              <img
+                                class="image-stroke-d-m"
+                                src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/aa419895-9fbb-4d20-9de9-326423bb06a0.png"
+                                alt="Facebook"
+                                style="
+                                  border-radius: 50%;
+                                  display: inline-block;
+                                  height: 20px;
+                                  width: 20px;
+                                "
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 6px; width: 20px">
+                            <a
+                              href="https://www.instagram.com/goodwine/?hl=uk"
+                              target="_blank"
+                              mc-deep-link="false"
+                              style="text-decoration: none"
+                            >
+                              <img
+                                class="image-stroke-d-m"
+                                src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/2d82d8a2-98c8-4db1-aec9-c20284661c8d.png"
+                                alt="Instagram"
+                                style="
+                                  border-radius: 6px;
+                                  display: inline-block;
+                                  height: 20px;
+                                  width: 20px;
+                                "
+                              />
+                            </a>
+                          </td>
+                          <td>
+                            <!-- Dynamic size column -->
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                    <td width="300"
-                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;">
-                    <![endif]-->
-                <table
-                  class="column right"
-                  style="
-                    border-spacing: 0;
-                    font-family: 'Helvetica Neue', 'Helvetica', 'Arial',
-                      'sand-serif';
-                    color: #333333;
-                    width: 100%;
-                    display: inline-block;
-                    vertical-align: middle;
-                    max-width: 300px;
-                    text-align: center !important;
-                  "
-                >
-                  <tbody>
-                    <tr>
-                      <td
-                        class="inner"
-                        width="300"
-                        align="center"
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px 15px 20px; text-align: center">
+                      <p
+                        class="address"
                         style="
-                          padding-top: 7px;
-                          padding-bottom: 0px;
-                          padding-right: 0px;
-                          padding-left: 0px;
+                          color: #aaaaaa;
+                          display: inline-block;
+                          font-family: 'Inter';
+                          font-size: 13px;
+                          line-height: 16px;
+                          padding: 0 19px;
                           text-align: center;
-                          max-width: 300px;
                         "
-                      >
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="center"
-                          border="0"
-                          width="300"
-                        >
-                          <tbody>
-                            <tr>
-                              <td
-                                width="180"
-                                style="text-align: center; padding: 0 12px"
-                              >
-                                <a
-                                  href="https://play.google.com/store/apps/details?id=ua.com.goodwine.app"
-                                  target="_blank"
-                                  mc-deep-link="false"
-                                  ><img
-                                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/7/ef5cb886-6544-40b6-a479-aa42f3b993ab.png"
-                                    alt=""
-                                /></a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!--[if (gte mso 9)|(IE)]>
-                    </td>
-                    </tr>
-                    </table>
-                    <![endif]-->
-              </td>
-            </tr>
-            <!-- Apps market -->
-
-            <!--alcohol banner  -->
-            <tr>
-              <td>
-                <table
-                  cellspacing="0"
-                  cellpadding="0"
-                  style="
-                    border-collapse: collapse;
-                    margin: 0px;
-                    background-color: #ffffff;
-                  "
-                  align="center"
-                >
-                  <tbody>
-                    <tr>
-                      <td
-                        style="
-                          width: 100%;
-                          overflow: hidden;
-                          vertical-align: bottom;
-                          padding-left: 0px;
-                          height: auto;
-                          padding-bottom: 0px;
-                        "
-                      >
-                        <img
-                          src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/7/61cbfa61-65e2-444b-a7b5-65fa86cd2a9b.png"
-                          style="width: 100%; height: auto"
-                          alt=""
-                        />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <!--alcohol banner  -->
-
-            <tr>
-              <td align="center" style="height: 30px"></td>
-            </tr>
-
-            <!-- location -->
-            <tr>
-              <td
-                class="one-column"
-                style="
-                  padding-top: 0;
-                  padding-bottom: 0;
-                  padding-right: 0;
-                  padding-left: 0;
-                "
-              >
-                <table
-                  width="100%"
-                  style="
-                    border-spacing: 0;
-                    font-family: 'Helvetica Neue', 'Helvetica', 'Arial',
-                      'sand-serif';
-                    color: #000;
-                  "
-                >
-                  <tbody>
-                    <tr>
-                      <td
-                        style="
-                          font-size: 12px;
-                          line-height: 20px;
-                          padding: 0 0 30px;
-                        "
-                        align="center"
                       >
                         Адреса: %%Member_PostalCode%%, %%Member_Country%%,
                         %%Member_City%%, %%Member_Addr%%, %%Member_State%%
-                        %%Member_Busname%%
-                        <br />
+                        %%Member_Busname%% <br />
                         Подивитися
                         <a
                           href="%%view_email_url%%"
                           target="_blank"
-                          style="color: #000000; text-decoration: underline"
-                          >веб-версію</a
+                          style="
+                            color: inherit;
+                            font-family: inherit;
+                            text-decoration: underline;
+                            text-underline-offset: 3px;
+                          "
                         >
+                          веб-версію
+                        </a>
                         листа, Відписатися від розсилки
                         <a
                           href="%%=RedirectTo(Concat('http://pub.goodwine.kiev.ua/unsubscribe?sk=',[emailaddr]))=%%"
                           target="_blank"
                           mc-deep-link="false"
-                          style="color: #000000; text-decoration: underline"
-                          >за&nbsp;посиланням</a
+                          style="
+                            color: inherit;
+                            font-family: inherit;
+                            text-decoration: underline;
+                            text-underline-offset: 3px;
+                          "
+                          >за посиланням</a
                         >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="font-size: 12px; line-height: 20px"
-                        align="center"
-                      >
+                        <br />
                         Ознайомитись з
-
                         <a
                           href="https://goodwine.ua/uk/terms"
                           target="_blank"
                           mc-deep-link="false"
-                          style="color: #000000; text-decoration: underline"
+                          style="
+                            color: inherit;
+                            font-family: inherit;
+                            text-decoration: underline;
+                            text-underline-offset: 3px;
+                          "
                           >Політикою Конфіденційності</a
                         >
-                        та використанням ваших персональних даних.
-                      </td>
-                    </tr>
-                  </tbody>
+                        та <br />
+                        використанням ваших персональних даних.
+                      </p>
+                    </td>
+                  </tr>
                 </table>
               </td>
-            </tr>
-            <!-- location -->
-            <tr>
-              <td align="center" style="height: 50px"></td>
             </tr>
           </tbody>
         </table>
