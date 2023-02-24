@@ -435,6 +435,19 @@
         line-height: 120%;
       }
 
+      /*
+        Стилі написані для вирішення проблеми з синіми посиланнями на Gmail в мобільній версії для тексту з адресою магазина. 
+        Замість тексту адреси створюються посилання з вбудованими стилями які не підходять по дизайну.
+        Детальніше "https://www.litmus.com/blog/how-to-fix-blue-links-in-gmail/" пункт перший.
+      */
+      .footer .address a {
+        color: inherit !important;
+        font-family: inherit !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+        text-decoration: none !important;
+      }
+
       /* Tablet size */
       @media screen and (max-width: 768px) {
         .desktop {
@@ -1341,7 +1354,7 @@
                           style="
                             color: inherit;
                             font-family: inherit;
-                            text-decoration: underline;
+                            text-decoration: underline !important;
                             text-underline-offset: 3px;
                           "
                         >
@@ -1355,7 +1368,7 @@
                           style="
                             color: inherit;
                             font-family: inherit;
-                            text-decoration: underline;
+                            text-decoration: underline !important;
                             text-underline-offset: 3px;
                           "
                         >
@@ -1370,7 +1383,7 @@
                           style="
                             color: inherit;
                             font-family: inherit;
-                            text-decoration: underline;
+                            text-decoration: underline !important;
                             text-underline-offset: 3px;
                           "
                         >
