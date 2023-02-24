@@ -354,10 +354,14 @@
     <!-- Dark mode -->
     <style type="text/css">
       @media (prefers-color-scheme: dark) {
+        /* 
+          Для того щоб Apple Mail в dark mode відображав білий колір для властивості background-color треба вказати колір не з прозорістю на 100%, або вказати не повністю білий колір бо інакше він відображає прозорий колір. 
+          В даному випадку використовую #fffffe для всіх випадках де потрібен білий колір.
+        */
         body,
         table {
           background-color: #262524 !important;
-          color: #ffffff !important;
+          color: #fffffe !important;
         }
         h1,
         h2,
@@ -367,7 +371,7 @@
         span,
         a,
         img {
-          color: #ffffff !important;
+          color: #fffffe !important;
         }
         .remove-el-d-m {
           display: none !important;
@@ -385,17 +389,20 @@
           filter: brightness(80%);
         }
         .image-stroke-d-m {
-          background-color: white;
-          border: 0.5px solid white;
+          background-color: #fffffe;
+          border: 0.5px solid #fffffe;
         }
         .darker-section-d-m {
           background-color: #1c1c1c !important;
         }
         .horizontal-line-d-m {
-          background-color: #ffffff !important;
+          background-color: #fffffe !important;
         }
-        .button-d-m {
-          border-color: #ffffff !important;
+        .border-light-d-m {
+          border-color: #fffffe !important;
+        }
+        .background-light-d-m {
+          background-color: #fffffe !important;
         }
       }
     </style>
@@ -912,7 +919,7 @@
                   <tr>
                     <td style="padding: 10px 15px 20px; text-align: center">
                       <a
-                        class="button-d-m"
+                        class="border-light-d-m"
                         href=""
                         target="_blank"
                         mc-deep-link="false"
@@ -1003,7 +1010,7 @@
                   <tr>
                     <td style="padding: 10px 15px 20px; text-align: center">
                       <a
-                        class="button-d-m"
+                        class="border-light-d-m"
                         href=""
                         target="_blank"
                         mc-deep-link="false"
@@ -1094,7 +1101,7 @@
                   <tr>
                     <td style="padding: 10px 15px 20px; text-align: center">
                       <a
-                        class="button-d-m"
+                        class="border-light-d-m"
                         href=""
                         target="_blank"
                         mc-deep-link="false"
@@ -1181,6 +1188,7 @@
                   <tr>
                     <td style="padding: 10px 15px 40px; text-align: center">
                       <a
+                        class="background-light-d-m"
                         href=""
                         target="_blank"
                         mc-deep-link="false"
