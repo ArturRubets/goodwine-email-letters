@@ -18,8 +18,8 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="format-detection" content="address=no" />
   <title></title>
-  <meta name="color-scheme" content="light dark" />
-  <meta name="supported-color-schemes" content="light dark" />
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
 
   <!-- Another styles -->
   <style type="text/css">
@@ -360,14 +360,13 @@
       </style>
     <![endif]-->
 
-  <!-- Dark mode -->
+  <!-- Dark mode media queries to target Apple and IOS -->
   <style type="text/css">
     @media (prefers-color-scheme: dark) {
 
       /*
-          Для того щоб Apple Mail в dark mode відображав білий колір для властивості background-color треба вказати колір не з прозорістю на 100%, або вказати не повністю білий колір бо інакше він відображає прозорий колір.
-          В даному випадку використовую #fffffe для всіх випадках де потрібен білий колір.
-        */
+        В Apple Mail чисто білий (#ffffff) background буде інвертований у чорний. В даному випадку використовую #fffffe для всіх випадках де потрібен білий колір.
+      */
       body,
       table {
         background-color: #262524 !important;
