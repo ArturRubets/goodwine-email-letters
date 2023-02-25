@@ -417,17 +417,15 @@
     }
   </style>
 
-  <!-- Dark mode media queries to target Gmail -->
+  <!-- Dark mode media queries to target Gmail. Ці стилі виконуються весь час незалежно від dark mode тільки для gmail клієнтів. -->
   <style>
-    u+.body .bg-white-d-m {
+    u+.body .bg-white-gmail-d-m {
       background-image: linear-gradient(#ffffff, #ffffff);
+      border-radius: 3px;
     }
 
-    u+.body .bg-light-black-d-m {
-      background-image: linear-gradient(#2e2e2e, #2e2e2e);
-    }
-
-    u+.body .border-white-d-m {
+    u+.body .border-white-gmail-d-m {
+      /* Чорний колір у gmail буде автоматично перетворюватися у білий колір */
       border-color: #000000 !important;
     }
   </style>
@@ -521,9 +519,9 @@
             <!-- Light mode -->
             <td class="logo remove-el-d-m" style="text-align: center; padding: 20px 15px;">
               <a href="https://goodwine.com.ua" target="_blank" mc-deep-link="false">
-                <img class="bg-white-d-m"
+                <img class="bg-white-gmail-d-m"
                   src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/16d85911-1f62-40ba-988d-e6eaacb4022e.png"
-                  alt="Goodwine" style="border-radius: 3px; display: inline-block; height: 32px; width: 117px" />
+                  alt="Goodwine" style="display: inline-block; height: 32px; width: 117px" />
               </a>
             </td>
             <!-- Dark mode -->
@@ -856,7 +854,7 @@
                         <td style="padding: 0 6px">
                           <a href="https://www.facebook.com/goodwine.ukraine" target="_blank" mc-deep-link="false"
                             style="text-decoration: none">
-                            <img class="border-white-d-m"
+                            <img class="border-white-gmail-d-m"
                               src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/a5b2199d-70f8-4176-92ad-d47fec581e95.jpg"
                               alt="Facebook"
                               style="border-radius: 50%;border: 1px solid #ffffff;display: inline-block; height: 20px; width: 20px;" />
@@ -866,7 +864,7 @@
                         <td style="padding: 0 6px">
                           <a href="https://www.instagram.com/goodwine/?hl=uk" target="_blank" mc-deep-link="false"
                             style="text-decoration: none">
-                            <img class="border-white-d-m"
+                            <img class="border-white-gmail-d-m"
                               src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/0f59bdf7-3c06-49bd-97c4-71c648c31c59.jpg"
                               alt="Instagram"
                               style="border-radius: 6px; border: 1px solid #ffffff;display: inline-block; height: 20px; width: 20px;" />
