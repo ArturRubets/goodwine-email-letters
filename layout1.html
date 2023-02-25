@@ -403,11 +403,6 @@
         opacity: 0.8;
       }
 
-      .image-stroke-d-m {
-        background-color: #fffffe;
-        border: 0.5px solid #fffffe;
-      }
-
       .border-white-d-m {
         border-color: #fffffe !important;
       }
@@ -419,6 +414,21 @@
       .bg-white-d-m {
         background-color: #fffffe !important;
       }
+    }
+  </style>
+
+  <!-- Dark mode media queries to target Gmail -->
+  <style>
+    u+.body .bg-white-d-m {
+      background-image: linear-gradient(#ffffff, #ffffff);
+    }
+
+    u+.body .bg-light-black-d-m {
+      background-image: linear-gradient(#2e2e2e, #2e2e2e);
+    }
+
+    u+.body .border-white-d-m {
+      border-color: #000000 !important;
     }
   </style>
 
@@ -493,7 +503,7 @@
   </style>
 </head>
 
-<body
+<body class="body"
   style="margin: 0; padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 0; min-width: 100%; background-color: #ffffff;">
   <center class="wrapper bg-gray"
     style="width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
@@ -509,11 +519,11 @@
           <!-- Logo section-->
           <tr>
             <!-- Light mode -->
-            <td class="logo remove-el-d-m" style="text-align: center; padding: 20px 15px">
+            <td class="logo remove-el-d-m" style="text-align: center; padding: 20px 15px;">
               <a href="https://goodwine.com.ua" target="_blank" mc-deep-link="false">
-                <img
+                <img class="bg-white-d-m"
                   src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/16d85911-1f62-40ba-988d-e6eaacb4022e.png"
-                  alt="Goodwine" style="display: inline-block; height: 32px; width: 117px" />
+                  alt="Goodwine" style="border-radius: 3px; display: inline-block; height: 32px; width: 117px" />
               </a>
             </td>
             <!-- Dark mode -->
@@ -842,22 +852,24 @@
                     <!-- Icons -->
                     <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; margin: 0 auto">
                       <tr>
+                        <!-- Light mode -->
                         <td style="padding: 0 6px">
                           <a href="https://www.facebook.com/goodwine.ukraine" target="_blank" mc-deep-link="false"
                             style="text-decoration: none">
-                            <img class="image-stroke-d-m"
-                              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/aa419895-9fbb-4d20-9de9-326423bb06a0.png"
+                            <img class="border-white-d-m"
+                              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/a5b2199d-70f8-4176-92ad-d47fec581e95.jpg"
                               alt="Facebook"
-                              style="border-radius: 50%; display: inline-block; height: 20px; width: 20px;" />
+                              style="border-radius: 50%;border: 1px solid #ffffff;display: inline-block; height: 20px; width: 20px;" />
                           </a>
                         </td>
+                        <!-- Dark mode -->
                         <td style="padding: 0 6px">
                           <a href="https://www.instagram.com/goodwine/?hl=uk" target="_blank" mc-deep-link="false"
                             style="text-decoration: none">
-                            <img class="image-stroke-d-m"
-                              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/2d82d8a2-98c8-4db1-aec9-c20284661c8d.png"
+                            <img class="border-white-d-m"
+                              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/0f59bdf7-3c06-49bd-97c4-71c648c31c59.jpg"
                               alt="Instagram"
-                              style="border-radius: 6px; display: inline-block; height: 20px; width: 20px;" />
+                              style="border-radius: 6px; border: 1px solid #ffffff;display: inline-block; height: 20px; width: 20px;" />
                           </a>
                         </td>
                       </tr>
