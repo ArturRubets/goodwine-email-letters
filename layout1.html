@@ -21,6 +21,10 @@
       </a>
     </td>
   </tr>
+  3) Пуста секція що з'являється на мобільному пристрої
+    <tr>
+      <td class="mobile" style="height: 20px; display: none;"></td>
+    </tr>
 -->
 <custom name="opencounter" type="tracking" />
 <!DOCTYPE html
@@ -179,7 +183,6 @@
       text-decoration: none !important;
     }
 
-    /* Tablet size */
     @media screen and (max-width: 768px) {
       .desktop {
         display: none !important;
@@ -190,18 +193,6 @@
 
       .mobile {
         display: block !important;
-      }
-
-      .logo {
-        padding-top: 40px !important;
-      }
-
-      .horizontal-line-d-m-container {
-        padding-bottom: 40px !important;
-      }
-
-      .footer {
-        padding-bottom: 25px;
       }
     }
 
@@ -222,6 +213,10 @@
   <table align="center" cellpadding="0" cellspacing="0" border="0" width="600"
     style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; max-width: 600px;  width: 100%;">
     <tbody>
+      <tr>
+        <td class="mobile" style="height: 20px; display: none;">
+        </td>
+      </tr>
       <!-- Logo section-->
       <tr>
         <!-- Light mode -->
@@ -242,10 +237,14 @@
         </td>
       </tr>
       <tr>
-        <td class="horizontal-line-d-m-container" style="padding-bottom: 20px; text-align: center">
+        <td style="padding-bottom: 20px; text-align: center">
           <div class="bg-white-d-m"
             style="background-color: #000000; display: inline-block; height: 1px; max-width: 379px; width: 80%;">
           </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="mobile" style="height: 20px; display: none;">
         </td>
       </tr>
       <tr>
@@ -633,6 +632,10 @@
               </td>
             </tr>
           </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="mobile" style="height: 25px; display: none;">
         </td>
       </tr>
     </tbody>
