@@ -39,26 +39,16 @@
   <meta name="supported-color-schemes" content="light dark">
   <title>Email Goodwine</title>
 
-  <!-- Another styles -->
-  <style type="text/css">
+  <!-- Підключення dark mode -->
+  <style>
     :root {
       color-scheme: light dark;
       supported-color-schemes: light dark;
     }
+  </style>
 
-    body {
-      margin: 0;
-      padding: 0;
-      min-width: 100%;
-      background-color: #ffffff;
-    }
-
-    table {
-      border-spacing: 0;
-      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sand-serif';
-      color: #333333;
-    }
-
+  <!-- Reset styles -->
+  <style type="text/css">
     td {
       padding: 0;
     }
@@ -67,275 +57,14 @@
       border: 0;
     }
 
-    .to-center {
-      text-align: center;
-    }
-
-    .to-left {
-      text-align: left;
-    }
-
-    .white {
-      color: #ffffff;
-    }
-
-    .full-width-image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .inner {
-      padding: 20px;
-    }
-
     p {
       margin: 0;
       padding: 0;
     }
 
     a {
+      color: inherit;
       text-decoration: underline;
-    }
-
-    .one-column .contents {
-      text-align: left;
-    }
-
-    .one-column p {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .one-column p.font-size-16 {
-      font-size: 16px;
-    }
-
-    .one-column p.font-size-18 {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .grey {
-      color: #eae9e6;
-    }
-
-    .one-column a.big-url {
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      color: #000000;
-      font-size: 20px;
-    }
-
-    .one-column a.button {
-      display: block;
-      text-align: center;
-    }
-
-    .one-column a.button span {
-      display: inline-block;
-      text-align: center;
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 18px;
-      margin: 0 auto;
-      padding: 15px 30px 12px;
-      border-bottom: 3px solid #fe8860;
-      /* background-color: #ffa688;*/
-    }
-
-    .one-column p.smalltext {
-      font-size: 12px;
-      color: #898989;
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-
-    .one-column p.li {
-      margin-bottom: 0;
-    }
-
-    .two-column {
-      text-align: center;
-      font-size: 0;
-    }
-
-    .two-column .column {
-      width: 100%;
-      /*max-width: 300px;*/
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    .two-column .column1 {
-      width: 100%;
-      /*max-width: 380px;*/
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    .two-column .column2 {
-      width: 100%;
-      /*max-width: 220px;*/
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    .contents {
-      width: 100%;
-    }
-
-    .two-column .contents {
-      font-size: 14px;
-      text-align: left;
-    }
-
-    .two-column img {
-      width: 100%;
-      height: auto;
-    }
-
-    .two-column .text {
-      padding-top: 10px;
-    }
-
-    .two-column p.h6 {
-      font-size: 30px;
-      font-weight: bold;
-      margin-top: 35px;
-    }
-
-    .three-column {
-      text-align: center;
-      font-size: 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    .three-column .column {
-      width: 100%;
-      /*max-width: 200px;*/
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    .three-column .contents {
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .three-column img {
-      width: 100%;
-      height: auto;
-    }
-
-    .three-column .text {
-      padding-top: 10px;
-    }
-
-    .left-sidebar {
-      text-align: center;
-      font-size: 0;
-    }
-
-    .left-sidebar .column {
-      width: 100%;
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-    .left-sidebar .left {
-      /*max-width: 300px;*/
-    }
-
-    .left-sidebar .right {
-      /*max-width: 300px;*/
-    }
-
-    .left-sidebar .contents {
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .right-sidebar {
-      text-align: center;
-      font-size: 0;
-    }
-
-    .right-sidebar .column {
-      width: 100%;
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-    .right-sidebar .left {
-      /* max-width: 300px;*/
-    }
-
-    .right-sidebar .right {
-      /*max-width: 300px;*/
-    }
-
-    .right-sidebar .contents {
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .right-sidebar a,
-    .left-sidebar a {
-      color: #000000;
-      text-decoration: none;
-    }
-
-    .left-sidebar p.h1,
-    .right-sidebar p.h1 {
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
-    .left-sidebar p,
-    .right-sidebar p {
-      margin-bottom: 15px;
-    }
-
-    .offset {
-      position: relative;
-      left: -13px;
-    }
-
-    @media only screen and (max-width: 767px) {
-      .mobile-display {
-        display: inline-block !important;
-      }
-
-      .desctop-display {
-        display: none;
-      }
-
-      .mobile-center {
-        text-align: center !important;
-        margin: 0 auto;
-      }
-
-      .mobile-float-none {
-        float: none !important;
-      }
-
-      .mobile-ib {
-        display: inline-block !important;
-      }
-
-      .mobile-100 {
-        width: 100% !important;
-      }
-
-      .mobile-pad-left-35 {
-        padding-left: 35px !important;
-      }
-
-      .mobile-spec-width {
-        max-width: 245px !important;
-      }
     }
   </style>
 
@@ -411,7 +140,7 @@
     }
   </style>
 
-  <!-- Basic styles -->
+  <!-- Основні стилі -->
   <style type="text/css">
     * {
       box-sizing: border-box;
