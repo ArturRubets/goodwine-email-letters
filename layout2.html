@@ -1,0 +1,647 @@
+<custom name="opencounter" type="tracking" />
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml" lang="uk">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Email Goodwine</title>
+
+  <!-- Підключення dark mode -->
+  <style>
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+  </style>
+
+  <!-- Reset styles -->
+  <style type="text/css">
+    table {
+      border-collapse: collapse !important;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    img {
+      border: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <!-- Dark mode media queries to target Apple and IOS -->
+  <style type="text/css">
+    @media (prefers-color-scheme: dark) {
+
+      /*
+        Чисто білий (#ffffff) інвертується у чорний. В даному випадку використовую #fffffe.
+      */
+      body {
+        background-color: #262524 !important;
+        color: #fffffe !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      td,
+      span,
+      a,
+      img {
+        color: #fffffe !important;
+      }
+
+      .remove-el-d-m {
+        display: none !important;
+        height: 0 !important;
+        mso-hide: all !important;
+        width: 0 !important;
+      }
+
+      .show-table-cell-d-m {
+        display: table-cell !important;
+      }
+
+      .mix-screen-d-m {
+        mix-blend-mode: screen;
+      }
+
+      .darker-d-m {
+        opacity: 0.9;
+      }
+
+      .bg-light-black-d-m {
+        background-color: #2e2e2e !important;
+      }
+    }
+  </style>
+
+  <!-- Стилі для покращення в dark mode Gmail. Вони виконуються весь час незалежно від dark mode тільки для gmail клієнтів. -->
+  <style>
+    u+.body .border-white-gmail-d-m {
+      /* Чорний колір у gmail буде автоматично перетворюватися у білий колір */
+      border-color: #000000 !important;
+    }
+  </style>
+
+  <!-- Основні стилі -->
+  <style type="text/css">
+    html,
+    body,
+    table {
+      color: #000000;
+      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sand-serif';
+      font-size: 16px;
+      font-style: normal;
+      line-height: 120%;
+    }
+
+    img {
+      /* Вирівнювання alt тексту зліва */
+      text-align: left;
+      font-size: 14px;
+    }
+
+    /*
+      Стилі написані для вирішення проблеми на Gmail в мобільній версії для тексту з адресою магазина.
+      Замість тексту адреси створюються посилання з вбудованими стилями які не підходять по дизайну.
+      Детальніше "https://www.litmus.com/blog/how-to-fix-blue-links-in-gmail/" пункт перший.
+    */
+    .footer .address a {
+      color: inherit !important;
+      font-family: inherit !important;
+      font-size: inherit !important;
+      line-height: inherit !important;
+      text-decoration: none !important;
+    }
+
+    @media screen and (max-width: 768px) {
+      .desktop {
+        display: none !important;
+        height: 0 !important;
+        mso-hide: all !important;
+        width: 0 !important;
+      }
+
+      .mobile {
+        display: block !important;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .title-text {
+        width: 309px;
+      }
+
+      .footer .address {
+        width: 347px;
+      }
+    }
+  </style>
+</head>
+
+<body class="body" style="margin: 0; padding:0; min-width: 100%; background-color: #ffffff;">
+  <table align="center" cellpadding="0" cellspacing="0" border="0" width="600"
+    style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; max-width: 600px; width: 100%;">
+    <tbody>
+      <tr>
+        <td class="mobile" style="height: 20px; display: none;"></td>
+      </tr>
+      <!-- Logo section-->
+      <tr>
+        <!-- Light mode -->
+        <td class="remove-el-d-m" style="text-align: center; padding: 20px 15px;">
+          <a href="https://goodwine.ua/us/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+            <img
+              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/38fa2558-dc7b-458e-b3df-ce64fe71fff9.jpg"
+              alt="Goodwine" style="height:32px;width: 117px; border-radius: 2px;" />
+          </a>
+        </td>
+        <!-- Dark mode -->
+        <td class="show-table-cell-d-m" style="text-align: center; display: none; padding: 20px 15px;">
+          <a href="https://goodwine.ua/us/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+            <img class="mix-screen-d-m"
+              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/e028455c-e9e4-4133-ba1f-8a61ff9cd836.png"
+              alt="Goodwine" style="height:32px;width: 117px;" />
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-bottom: 20px; text-align: center">
+          <div style="display: inline-block; max-width: 379px; width: 80%;height: 1px;background-color:#5c5a5a;">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="mobile" style="height: 20px; display: none;"></td>
+      </tr>
+      <tr>
+        <td style="height: 60px;"></td>
+      </tr>
+      <tr>
+      <tr>
+        <td style="padding: 0 15px 40px; text-align: center">
+          <p style="display: inline-block; font-size: 30px; font-style: normal; font-weight: 700; line-height: 114%;">
+            Вітаємо,
+            <span style="text-transform: capitalize">%%FirstName%%</span>!
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0 15px 60px; text-align: center">
+          <p class="title-text" style="display: inline-block; max-width: 498px;">
+            Упродовж минулого року ви стали учасником програми лояльності goodwine, але, якщо вірити нашій системі, за
+            цей час
+            <span style="color: #1b1b1b; font-weight: bold">
+              ви не скористалися доступними вам пропозиціями.
+            </span>
+            <br>
+            Може цей лист підштовхне вас до першого замовлення онлайн, а може
+            ви навіть зайдете
+            <a href="" target="_blank" mc-deep-link="false"
+              style="color: inherit; font-family: inherit; text-decoration: underline;">
+              у наш флагманський магазин на Мечнікова.
+            </a>
+          </p>
+        </td>
+      </tr>
+      <!-- Google Play, App Store, Goodwine icons -->
+      <tr>
+        <td class="bg-light-black-d-m" style="background: rgba(234, 234, 234, 0.32); padding: 37px 15px;">
+          <a href="" target="_blank" mc-deep-link="false"
+            style="color: inherit; font-family: inherit; text-decoration: none;">
+            <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%;">
+              <tr>
+                <td style="text-align: right;">
+                  <img
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/373f43a6-83f5-429e-acf0-43acd6d405cb.png"
+                    alt="Google Play" style="height: 27px; width: 92px;" />
+                </td>
+                <td style="text-align: center;padding: 0 10px;">
+                  <img
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/700e9c97-64ea-43f9-80f4-fe10fc7e323a.png"
+                    alt="Goodwine" style="height: 82px; width: 84px;" />
+                </td>
+                <td style="text-align: left;">
+                  <img
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/371089ab-1567-4311-86be-68ea99c98cf1.png"
+                    alt="App Store" style="height: 29px; width: 90px;" />
+                </td>
+              </tr>
+            </table>
+          </a>
+        </td>
+      </tr>
+
+
+
+
+      <!-- Yellow place section -->
+      <tr>
+        <td class="desktop">
+          <a href="https://goodwine.ua/templates/yellow-place/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+            <table class="bg-light-black-d-m" cellpadding="0" cellspacing="0" border="0"
+              style="background-color: #eec352; max-width: 600px; width: 100%;">
+              <tr>
+                <td style="text-align: center; padding: 40px 20px 40px 5%; width: 50%;">
+                  <img
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/2ff891b8-a38d-48f4-ac92-83a4fddd6b24.png"
+                    alt="Yellow place" style="height: 153px; width: 236px;" />
+                </td>
+                <td style="padding: 0 5% 0 20px; width: 50%">
+                  <p style="width: 257px">
+                    У нас є
+                    <span style="font-weight: 700">власна кав’ярня з обсмажкою кави,</span>
+                    самої кави — понад 100 видів.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </a>
+        </td>
+        <td class="mobile" style="display: none">
+          <a href="https://goodwine.ua/templates/yellow-place/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+            <table class="bg-light-black-d-m" cellpadding="0" cellspacing="0" border="0"
+              style="background-color: #eec352; max-width: 600px; width: 100%;">
+              <tr>
+                <td style="padding: 60px 15px 20px; text-align: center">
+                  <img
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/2ff891b8-a38d-48f4-ac92-83a4fddd6b24.png"
+                    alt="Yellow place" style="height: 153px; width: 236px;" />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 20px 15px 60px; text-align: center">
+                  <p style="display: inline-block; text-align: left; width: 257px;">
+                    У нас є
+                    <span style="font-weight: 700">власна кав’ярня з обсмажкою кави,</span>
+                    самої кави — понад 100 видів.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </a>
+        </td>
+      </tr>
+      <!-- Ukrainian farmer section -->
+      <tr>
+        <td class="desktop">
+          <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%">
+            <tr>
+              <td style="padding: 0 50px 0 39px; width: 50%">
+                <a href="https://goodwine.page.link/ukrainian_products_email_trigger_1" target="_blank"
+                  mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <p style="width: 218px">
+                    Ми привозимо унікальні й
+                    <span style="font-weight: 700">органічні продукти</span>
+                    від 150
+                    <span style="font-weight: 700">українських фермерів.</span>
+                  </p>
+                </a>
+              </td>
+              <td style="text-align: center; padding: 40px 39px 40px 58px; width: 50%;">
+                <a href="https://goodwine.page.link/ukrainian_products_email_trigger_1" target="_blank"
+                  mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="mix-screen-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/11940df3-b216-4c4c-a597-0db36ba6be4e.png"
+                    alt="It's Ukrainian" style="height: 130px; width: 194px;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="mobile" style="display: none">
+          <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%">
+            <tr>
+              <td style="text-align: center; padding: 60px 15px 13px">
+                <a href="https://goodwine.page.link/ukrainian_products_email_trigger_1" target="_blank"
+                  mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <p style="display: inline-block; text-align: left; width: 218px;">
+                    Ми привозимо унікальні й
+                    <span style="font-weight: 700">органічні продукти</span>
+                    від 150
+                    <span style="font-weight: 700">українських фермерів.</span>
+                  </p>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center; padding: 13px 15px 60px">
+                <a href="https://goodwine.page.link/ukrainian_products_email_trigger_1" target="_blank"
+                  mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="mix-screen-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/11940df3-b216-4c4c-a597-0db36ba6be4e.png"
+                    alt="It's Ukrainian" style="height: 130px; width: 194px;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Fish section -->
+      <tr>
+        <td class="desktop">
+          <a href="https://goodwine.ua/templates/fish/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+            <table class="bg-light-black-d-m" cellpadding="0" cellspacing="0" border="0"
+              style="background-color: #94b7d7; max-width: 600px; width: 100%;">
+              <tr>
+                <td style="text-align: center; padding: 60px 54px 60px 95px; width: 50%;">
+                  <img class="mix-screen-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/b7f5d707-6dbe-4005-98a0-aaaa487565fd.png"
+                    alt="Fish" style="height: 113px; width: 106px;" />
+                </td>
+                <td style="padding: 88px 61px 88px 54px; width: 50%">
+                  <p style="width: 230px">
+                    Ми робимо все можливе, щоб
+                    <span style="font-weight: 700">постачання свіжої риби</span>
+                    відбувалися
+                    <span style="font-weight: 700">щочетверга.</span>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </a>
+        </td>
+        <td class="mobile" style="display: none">
+          <a href="https://goodwine.ua/templates/fish/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+            <table class="bg-light-black-d-m" cellpadding="0" cellspacing="0" border="0"
+              style="background-color: #94b7d7; max-width: 600px; width: 100%;">
+              <tr>
+                <td style="text-align: center; padding: 60px 15px 30px">
+                  <img class="mix-screen-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/b7f5d707-6dbe-4005-98a0-aaaa487565fd.png"
+                    alt="Fish" style="height: 113px; width: 106px;" />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center; padding: 30px 15px 60px">
+                  <p style="display: inline-block; text-align: left; width: 230px;">
+                    Ми робимо все можливе, щоб
+                    <span style="font-weight: 700">постачання свіжої риби</span>
+                    відбувалися
+                    <span style="font-weight: 700">щочетверга.</span>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 40px 15px; text-align: center">
+          <p style="display: inline-block; width: 335px">
+            Кілька слів про відділи, на які ми пропонуємо звернути увагу:
+          </p>
+        </td>
+      </tr>
+      <!-- Gastronomy section -->
+      <tr>
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%">
+            <tr>
+              <td class="desktop" style="padding: 20px 34px 10px; text-align: center">
+                <a href="https://goodwine.ua/templates/gastronomy/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/26c68400-9044-4a0d-a7d6-d21a96a4ee81.jpg"
+                    alt="Gastronomy" style="height: 296px; width: 532px;" />
+                </a>
+              </td>
+              <td class="mobile" style="display: none; padding: 20px 25px 10px 25px; text-align: center;">
+                <a href="https://goodwine.ua/templates/gastronomy/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/2be9e798-b2a5-43d9-8476-3412d2c86363.jpg"
+                    alt="Gastronomy" style="height: 550px; width: 325px;" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 15px 20px; text-align: center">
+                <a href="https://goodwine.ua/templates/gastronomy/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/ed345cc7-71c8-4c1f-8fd9-677a0c8a6618.jpg"
+                    alt="Деталі" style="border-radius: 8px;width: 89px;height: 40px;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Cooking section -->
+      <tr>
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%">
+            <tr>
+              <td class="desktop" style="padding: 20px 34px 10px; text-align: center">
+                <a href="https://goodwine.ua/templates/cooking-landing/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/216b768d-a957-4c8b-a12e-a033faf56c30.jpg"
+                    alt="Cooking" style="height: 296px;width: 532px;" />
+                </a>
+              </td>
+              <td class="mobile" style="display: none;padding: 20px 25px 10px 25px;text-align: center;">
+                <a href="https://goodwine.ua/templates/cooking-landing/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/b295dae7-3f0b-4fea-a7b2-1a3096d28c04.jpg"
+                    alt="Cooking" style="height: 550px;width: 325px;" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 15px 20px; text-align: center">
+                <a href="https://goodwine.ua/templates/cooking-landing/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/ed345cc7-71c8-4c1f-8fd9-677a0c8a6618.jpg"
+                    alt="Деталі" style="border-radius: 8px;width: 89px;height: 40px;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Bakery section -->
+      <tr>
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%">
+            <tr>
+              <td class="desktop" style="padding: 20px 34px 10px; text-align: center">
+                <a href="https://goodwine.ua/templates/bakehouse/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/d07d44e6-d0ff-4b13-b25d-b4f59480a23c.jpg"
+                    alt="Bakery" style="height: 296px; width: 532px;" />
+                </a>
+              </td>
+              <td class="mobile" style="display: none; padding: 20px 25px 10px 25px; text-align: center;">
+                <a href="https://goodwine.ua/templates/bakehouse/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/9c1f3560-a2e0-4015-92c8-d9053a7c8445.jpg"
+                    alt="Bakery" style="height: 550px; width: 325px;" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 15px 20px; text-align: center">
+                <a href="https://goodwine.ua/templates/bakehouse/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/ed345cc7-71c8-4c1f-8fd9-677a0c8a6618.jpg"
+                    alt="Деталі" style="border-radius: 8px;width: 89px;height: 40px;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="bg-light-black-d-m" cellpadding="0" cellspacing="0" border="0"
+            style="background-color: #1b1b1b; max-width: 600px; width: 100%;">
+            <tr>
+              <td style="padding: 40px 15px 10px; text-align: center">
+                <p style="color: #bfbfbf; display: inline-block; max-width: 401px;">
+                  Щоб розповісти про всі наші відділи, нам знадобиться не
+                  один такий лист.
+                  <br />
+                  <br />
+                  Але всьому свій час.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 15px 10px; text-align: center">
+                <p style="color: #ffffff; display: inline-block; font-weight: 700; max-width: 428px;">
+                  Заходьте до goodwine на Мечнікова та знайомтеся з нашими
+                  продуктами або ж замовляйте доставку:
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 15px; text-align: center">
+                <a href="https://delivery.goodwine.ua/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: #ffffff; text-decoration-line: underline; font-family: inherit;">
+                  delivery.goodwine.ua
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 15px 40px; text-align: center">
+                <a href="https://delivery.goodwine.ua/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_1_new_alcohol_no_products"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img class="darker-d-m"
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/ed345cc7-71c8-4c1f-8fd9-677a0c8a6618.jpg"
+                    alt="Деталі" style="border-radius: 8px;width: 89px;height: 40px;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Footer -->
+      <tr>
+        <td class="footer">
+          <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%">
+            <tr>
+              <td style="padding: 20px 15px 10px">
+                <!-- Icons -->
+                <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; margin: 0 auto">
+                  <tr>
+                    <td style="padding: 0 6px">
+                      <a href="https://www.facebook.com/goodwine.ukraine/?fb_dtsg_ag=AdzX1OrBVoCQ68roGuBAsTaGG5xvjGvpt6eZDR74DJBSRw%3AAdzhH1kv9hRaPEQ1I-NupZNQwwDyilBW5dpXrCkqNnQ-_Q"
+                        target="_blank" mc-deep-link="false"
+                        style="color: inherit; font-family: inherit; text-decoration: none;">
+                        <img class="border-white-gmail-d-m"
+                          src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/a5b2199d-70f8-4176-92ad-d47fec581e95.jpg"
+                          alt="Facebook"
+                          style="border-radius: 50%;border: 1px solid #ffffff;height: 20px; width: 20px;" />
+                      </a>
+                    </td>
+                    <td style="padding: 0 6px">
+                      <a href="https://www.instagram.com/goodwine/" target="_blank" mc-deep-link="false"
+                        style="color: inherit; font-family: inherit; text-decoration: none;">
+                        <img class="border-white-gmail-d-m"
+                          src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/0f59bdf7-3c06-49bd-97c4-71c648c31c59.jpg"
+                          alt="Instagram"
+                          style="border-radius: 6px; border: 1px solid #ffffff;height: 20px; width: 20px;" />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 14px 20px; text-align: center">
+                <p class="address"
+                  style="color: #aaaaaa; display: inline-block; font-family: 'Inter'; font-size: 13px; line-height: 16px; text-align: center;box-sizing: border-box;padding: 0 20px;">
+                  Адреса: %%Member_PostalCode%%, %%Member_Country%%,
+                  %%Member_City%%, %%Member_Addr%%, %%Member_State%%
+                  %%Member_Busname%%
+                  <br />
+                  Подивитися
+                  <a href="%%view_email_url%%" target="_blank"
+                    style="color: inherit; font-family: inherit; text-decoration: underline !important; text-underline-offset: 3px;">веб-версію</a>
+                  листа, Відписатися від розсилки
+                  <a href="%%=RedirectTo(Concat('http://pub.goodwine.kiev.ua/unsubscribe?sk=',[emailaddr]))=%%"
+                    target="_blank" mc-deep-link="false"
+                    style="color: inherit; font-family: inherit; text-decoration: underline !important; text-underline-offset: 3px;">за
+                    посиланням</a>
+                  <br />
+                  Ознайомитись з
+                  <a href="https://goodwine.ua/uk/terms" target="_blank" mc-deep-link="false"
+                    style="color: inherit; font-family: inherit; text-decoration: underline !important; text-underline-offset: 3px;">Політикою
+                    Конфіденційності</a>
+                  та
+                  <br />
+                  використанням ваших персональних даних.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="mobile" style="height: 25px; display: none;"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
