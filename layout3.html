@@ -142,12 +142,31 @@
       line-height: inherit !important;
       text-decoration: none !important;
     }
+
+    @media screen and (max-width: 768px) {
+      .desktop {
+        display: none !important;
+        height: 0 !important;
+        mso-hide: all !important;
+        width: 0 !important;
+      }
+
+      .mobile {
+        display: block !important;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .footer .address {
+        width: 347px;
+      }
+    }
   </style>
 </head>
 
 <body class="body" style="margin: 0; padding:0; min-width: 100%; background-color: #ffffff;">
   <table align="center" cellpadding="0" cellspacing="0" border="0" width="600"
-    style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; width: 600px;">
+    style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; max-width: 600px; width: 100%;">
     <tbody>
       <!-- Logo section-->
       <tr>
@@ -190,7 +209,7 @@
       </tr>
       <tr>
         <td style="padding: 0 15px 52px; text-align: center">
-          <p style="display: inline-block;padding: 0 74px;">
+          <p style="display: inline-block;padding: 0 74px; min-width: 308px;">
             Наша система підказує, що упродовж минулого року
             ви приєдналися до
             <a href="https://loyalty.goodwine.ua/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_3_30k_products_green_to_gold"
@@ -212,17 +231,22 @@
       <tr>
         <td>
           <table cellpadding="0" cellspacing="0" border="0"
-            style="width: 600px; background-color: #7b9b87;background-image: url(https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/594ee6cc-55f6-4c5b-8454-a22197a2869c.png);">
+            style="background-color: #7b9b87;background-image: url(https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/594ee6cc-55f6-4c5b-8454-a22197a2869c.png);margin: 0 auto;">
             <tr>
-              <td style="text-align: center;">
+              <td class="desktop" style="text-align: center;">
                 <img
                   src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/07d8a02f-814b-4a87-8595-830eab008695.jpg"
                   alt="Найрізноманітніші продукти з усього світу!" style="width: 600px;height: 176px;" />
               </td>
+              <td class="mobile" style="text-align: center;display: none;">
+                <img
+                  src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/58cfefea-08e9-4575-9c22-39f02bc513d5.jpg"
+                  alt="Найрізноманітніші продукти з усього світу!" style="width: 376px;height: 176px;" />
+              </td>
             </tr>
             <tr>
-              <td style="padding: 47px 40px;">
-                <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+              <td class="desktop" style="padding: 47px 40px;">
+                <table cellpadding="0" cellspacing="0" border="0">
                   <tr>
                     <td>
                       <p style="color: #ededed; width: 170px;text-align: left;">
@@ -243,6 +267,40 @@
                     </td>
                     <td>
                       <p style="color: #ededed; width: 164px;text-align: right;">
+                        Щоб врешті-решт
+                        <span style="font-weight: 700;color: #ffffff;">
+                          покласти на полицях магазину те, що ми даємо нашим дітям.
+                        </span>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="mobile" style="display: none; padding: 41px 38px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                  <tr>
+                    <td style="padding-bottom: 25px;">
+                      <p style="color: #ededed; width: 300px;text-align: justify;">
+                        <span style="font-weight: 700;color: #ffffff;">
+                          Ми постійно знаходимо виробників,
+                        </span>
+                        які створюють органічні та натуральні продукти.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 25px;">
+                      <p style="color: #ededed; width: 300px;text-align: justify;">
+                        Ми приїжджаємо до них в гості,
+                        <span style="font-weight: 700;color: #ffffff;">
+                          перевіряємо їхню продукцію в лабораторіях.
+                        </span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p style="color: #ededed;width: 300px;text-align: justify;">
                         Щоб врешті-решт
                         <span style="font-weight: 700;color: #ffffff;">
                           покласти на полицях магазину те, що ми даємо нашим дітям.
@@ -684,7 +742,7 @@
       <!-- Footer -->
       <tr>
         <td class="footer">
-          <table cellpadding="0" cellspacing="0" border="0" style="width: 600px;">
+          <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
             <tr>
               <td style="padding: 20px 15px 10px">
                 <!-- Icons -->
