@@ -36,15 +36,14 @@
   }
 </style>
 <tr>
-  <td style="padding: 10px 15px 40px; text-align: center">
+  <td style="padding: 0 15px 20px; text-align: center">
     <a href="" target="_blank" mc-deep-link="false"
-      style="text-decoration: none;color: inherit; font-family: inherit;overflow: hidden;display: inline-block;text-align: center; background-color: #7b9b87; background-image: url(https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/594ee6cc-55f6-4c5b-8454-a22197a2869c.png); border-radius: 17px;border: 1px solid #7b9b87;">
+      style="text-decoration: none;color: inherit; font-family: inherit;overflow: hidden;display: inline-block;text-align: center; background-color: #1b1b1b; background-image: url(https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/8e6e2dd5-0db5-4ad9-9835-40eb8cdf94f8.png); border-radius: 8px;">
       <table cellpadding="0" cellspacing="0" border="0"
-        style="border-radius: inherit;text-align: center;margin: 0 auto;height: 27px;width: 127px;">
+        style="border-radius: inherit;text-align: center;margin: 0 auto;height: 48px;width: 207px;">
         <tr>
           <td>
-            <span
-              style="font-size: 14px; font-weight: 700;color: #231f20 !important;font-family: 'Arial';">goodwine</span>
+            <span style="font-size: 14px; font-weight: 700;color: #eec352 !important;">goodwine.com.ua</span>
           </td>
         </tr>
       </table>
