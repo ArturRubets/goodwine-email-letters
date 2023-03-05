@@ -150,19 +150,39 @@
     @media screen and (max-width: 768px) {
       .desktop {
         display: none !important;
-        height: 0 !important;
-        mso-hide: all !important;
-        width: 0 !important;
       }
 
-      .mobile {
+      .tablet {
         display: block !important;
       }
     }
 
     @media screen and (max-width: 550px) {
+      .tablet {
+        display: none !important;
+      }
+
+      .mobile {
+        display: block !important;
+      }
+
       .footer .address {
-        /* width: 347px; */
+        width: 347px;
+      }
+    }
+  </style>
+
+  <!-- Стилі для цієї верстки -->
+  <style type="text/css">
+    @media screen and (max-width: 768px) {
+      .amount-block {
+        text-align: center !important;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .text-1 {
+        width: 311px;
       }
     }
   </style>
@@ -218,33 +238,44 @@
         </td>
       </tr>
       <tr>
-        <td style="padding: 0 15px 52px; text-align: center">
-          <p style="display: inline-block;text-align: center;">
-            <span style="white-space: nowrap;">Ви отримали цього листа, бо ми про вас не забуваємо.</span>
+        <td style="padding: 0 33px 54px; text-align: center">
+          <p class="text-1" style="display: inline-block;max-width: 418px;text-align: center;">
+            Ви отримали цього листа, бо <br class="mobile" style="display: none;"> ми про вас не забуваємо.
             <br>
-            <span style="white-space: nowrap;">Наша система каже, що за останній рік ви</span>
-            <br>
-            <span style="white-space: nowrap;">приєдналися до програми лояльності <span
-                style="font-weight: 700;">goodwine,</span></span>
-            <br>
-            <span style="font-weight: 700;">за що ми вдячні ♡</span>
+            Наша система каже, що за останній рік ви приєдналися до програми лояльності
+            <span style="font-weight: 700;white-space: nowrap;">
+              goodwine,
+            </span>
+            <span style="color: #17644b !important; font-weight: bold; white-space: nowrap;">
+              за що ми вдячні ♡
+            </span>
           </p>
         </td>
+      </tr>
+      <tr>
+        <td class="mobile" style="height: 27px; display: none;"></td>
       </tr>
       <tr>
         <td>
           <table cellpadding="0" cellspacing="0" border="0"
             style="width: 100%;background-color: #1b1b1b;background-image:url(https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/8e6e2dd5-0db5-4ad9-9835-40eb8cdf94f8.png);">
             <tr>
-              <td style="text-align: center;padding: 30px 15px;">
-                <p class="white-text-on-dark" style="color: #ffffff;display: inline-block;">
-                  <span class="white-text-on-dark" style="white-space: nowrap;">За цей рік ви витратили:</span>
-                <div style="height: 10px;"></div>
-                <span class="white-text-on-dark" style="white-space: nowrap; color: #eec352 !important;">3000
+              <td style="text-align: center;padding: 38px 15px 10px;">
+                <p style="color: #ffffff;display: inline-block;">
+                  <span style="white-space: nowrap;">За цей рік ви витратили:</span>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;padding: 0 15px 10px;">
+                <span style="font-size: 16px; font-weight: 400;color: #eec352 !important;line-height: 19px;">XXXXXX
                   UAH</span>
-                <div style="height: 10px;"></div>
-                <span class="white-text-on-dark" style="color: #ffffff;white-space: nowrap;">на різноманітні
-                  алкогольні напої у goodwine.</span>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;padding: 0 15px 38px;">
+                <p style="color: #ffffff;display: inline-block;">
+                  <span style="white-space: nowrap;">на різноманітні алкогольні напої у goodwine.</span>
                 </p>
               </td>
             </tr>
@@ -252,16 +283,16 @@
               <td style="padding: 30px 15px;text-align: center;">
                 <table cellpadding="0" cellspacing="0" border="0" style="display: inline-block;">
                   <tr>
-                    <td style="padding-right: 15px;">
+                    <td style="padding-right: 24px;">
                       <img
                         src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/023d2d5e-912a-4447-9762-19d8edac42a7.png"
                         alt="Goodwine" style="width: 47px;height: 51px;" />
                     </td>
                     <td>
-                      <span class="white-text-on-dark"
-                        style="font-size: 16px; font-weight: 400;color: #eec352 !important;line-height: 19px;">– це не
-                        багато і не мало,
-                        це просто число.</span>
+                      <p
+                        style="font-size: 16px; font-weight: 400;color: #eec352 !important; max-width: 318px;min-width: 195px;">
+                        –
+                        це не багато і не мало, <br class="mobile" style="display: none;"> це просто число.</p>
                     </td>
                   </tr>
                 </table>
@@ -271,35 +302,22 @@
         </td>
       </tr>
       <tr>
-        <td style="text-align: center;">
-          <table cellpadding="0" cellspacing="0" border="0"
-            style="background-color: #17644b;width: 100%; display: inline-block;">
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0" style="background-color: #17644b;width: 100%;">
             <tr>
-              <td style="padding: 30px 49px;">
-                <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+              <td style="padding: 60px 15px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
                   <tr>
                     <td style="padding-right: 15px;">
-                      <p style="color: #ffffff; text-align: right;">
-                        <span style="white-space: nowrap;">але воно багато значить для нас,</span>
-                        <br>
-                        <span style="white-space: nowrap;">бо від самого початку</span>
-                        <br>
-                        <span style="white-space: nowrap;">ми докладаємо всіх зусиль,</span>
-                        <br>
-                        <span style="white-space: nowrap;">щоб привозити в Україну <span style="font-weight: 700;">вино
-                            з
-                            усього
-                            світу</span></span>
-                        <br>
-                        <span style="white-space: nowrap;">й <span style="font-weight: 700;">продавати його за
-                            справедливими
-                            цінами.</span></span>
-                      </p>
+                      <img src="assets/layout5/inform-logo.png" alt="Вино з усього світу"
+                        style="width: 125px; height: 110px;" />
                     </td>
                     <td>
-                      <img
-                        src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/c598612c-62fa-4aac-b11a-3e264a4f0ae2.png"
-                        alt="Вино з усього світу" style="width: 125px; height: 110px;" />
+                      <p style="max-width: 334px; color: #ffffff;">
+                        – але воно багато значить для нас, бо від самого початку ми докладаємо всіх зусиль, щоб
+                        привозити в Україну вино з
+                        усього світу й продавати його <span style="font-weight: 700;"> за справедливими цінами.</span>
+                      </p>
                     </td>
                   </tr>
                 </table>
@@ -309,9 +327,9 @@
         </td>
       </tr>
       <tr>
-        <td style="padding: 20px 15px 52px; text-align: center">
-          <span
-            style="font-size: 60px;line-height: normal;width: 400px;display: inline-block;text-align: justify;font-weight: 700;font-family: Arial, Helvetica, sans-serif;">
+        <td style="padding: 20px 30px 52px; text-align: center">
+          <span class="text-2"
+            style="font-size: 60px;line-height: normal;max-width: 385px;display: inline-block;text-align: justify;font-weight: 700;font-family: Arial, Helvetica, sans-serif;">
             <span style="white-space: nowrap;">На полицях</span>
             <span style="white-space: nowrap;">goodwine</span>
             <br>
@@ -323,8 +341,8 @@
                     <a href="https://goodwine.com.ua/ua/vino.html/f/capacities-0.75---1?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
                       target="_blank" mc-deep-link="false"
                       style="color: inherit; font-family: inherit; text-decoration: none;">
-                      <span
-                        style="line-height: normal;font-size: 22px;font-weight: 700;font-family: Arial, Helvetica, sans-serif;color: #17644b !important;">вартістю
+                      <span class="text-3"
+                        style="line-height: normal;font-size: 20px;font-weight: 700;font-family: Arial, Helvetica, sans-serif;color: #17644b !important;">вартістю
                         від 129 UAH</span>
                     </a>
                   </td>
@@ -334,8 +352,8 @@
                     <a href="https://goodwine.com.ua/ua/vino/osobennye/95.html?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
                       target="_blank" mc-deep-link="false"
                       style="color: inherit; font-family: inherit; text-decoration: none;">
-                      <span
-                        style="line-height: normal;font-size: 22px;font-weight: 700;font-family: Arial, Helvetica, sans-serif;color: #a21b17 !important;">та
+                      <span class="text-3"
+                        style="line-height: normal;font-size: 20px;font-weight: 700;font-family: Arial, Helvetica, sans-serif;color: #a21b17 !important;">та
                         ексклюзив</span>
                     </a>
                   </td>
@@ -346,19 +364,56 @@
         </td>
       </tr>
       <tr>
-        <td style="padding: 0 32px 53px;">
+        <td class="desktop" style="height: 20px;"></td>
+      </tr>
+      <tr>
+        <td class="desktop tablet" style="padding: 0 15px 76px;">
           <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
             <tr>
               <td style="padding-right: 21px;">
-                <span style="font-weight: bold;font-size: 80px;">95%</span>
+                <span style="font-size: 90px;line-height: normal;">95%</span>
               </td>
               <td>
-                <p style="text-align: left; line-height: 120%;padding-right: 5px;">
+                <p style="text-align: left; line-height: 120%; width: 354px;">
                   <span style="font-weight: bold;white-space: nowrap;">вин привозимо напряму від виноробів,</span>
                   <br>
                   <span style="white-space: nowrap;">з якими, до речі, знайомимося особисто.</span>
                   <br>
-                  Нас цікавлять як невеликі сімейні виноробні, так топові світові виробники.
+                  Ми співпрацюємо як з невеликими сімейними
+                  виноробнями, так і з топовими світовими.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="mobile" style="padding: 0 25px 40px; display: none;">
+          <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+            <tr>
+              <td style="text-align: center;">
+                <table cellpadding="0" cellspacing="0" border="0" style="display: inline-block;">
+                  <tr>
+                    <td style="padding-right: 21px;">
+                      <span style="font-size: 90px;line-height:normal;">95%</span>
+                    </td>
+                    <td style="vertical-align: bottom; padding-bottom: 15px;">
+                      <span style="font-weight: 700;">вин</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="height: 21px;"></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">
+                <p style="display: inline-block;text-align: left; line-height: 120%; max-width: 320px;">
+                  <span style="font-weight: bold;white-space: nowrap;">привозимо напряму від виноробів,</span>
+                  <br>
+                  <span style="white-space: nowrap;">з якими, до речі, знайомимося особисто.</span>
+                  <br>
+                  Ми співпрацюємо як з невеликими сімейними
+                  виноробнями, так і з топовими світовими.
                 </p>
               </td>
             </tr>
@@ -366,78 +421,59 @@
         </td>
       </tr>
       <tr>
-        <td style="padding-bottom: 31px;">
-          <p style="text-align: center; font-weight: 700;font-size: 25px;line-height: 30px;white-space: nowrap;">
-            У goodwine ви знайдете
-          </p>
+        <td style="padding: 0 15px 40px;">
+          <p style="font-weight: 700;font-size: 25px;line-height: 120%;text-align: center;">У goodwine ви знайдете</p>
         </td>
       </tr>
       <tr>
-        <td class="bg-light-black-d-m" style="text-align: center;padding: 0 30px 24px;">
+        <td class="desktop" style="height: 25px;"></td>
+      </tr>
+      <tr>
+        <td class="desktop tablet" style="padding: 0 11px 6px;">
           <a href="https://goodwine.com.ua/ua/vino/osobennye/organic-wines.html?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
             target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
-            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
-              <tr>
-                <td style="width: 50%; padding-right: 20px;">
-                  <span
-                    style="color: #17644b !important ;font-weight: 700;font-size: 60px;line-height: 120%;">органічні</span>
-                </td>
-                <td style="width: 50%; text-align: left;">
-                  <img
-                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/f0b53fba-451d-4d00-981f-372f29ec0fa0.png"
-                    alt="Дивись вліво" style="width: 91px;height: 18px;" />
-                </td>
-              </tr>
-            </table>
+            <img src="assets/layout5/органічні-вина.png" alt="Органічні вина" style="width: 100%;" />
+          </a>
+        </td>
+        <td class="mobile" style="display: none; padding: 0 11px 6px;text-align: center;">
+          <a href="https://goodwine.com.ua/ua/vino/osobennye/organic-wines.html?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
+            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+            <img src="assets/layout5/органічні-вина-mobile.png" alt="Органічні вина" style="width: 354px;" />
           </a>
         </td>
       </tr>
       <tr>
-        <td class="bg-light-black-d-m" style="text-align: center;padding: 0 30px 36px;">
+        <td class="desktop tablet" style="padding: 0 11px 6px;">
           <a href="https://goodwine.com.ua/ua/vino/osobennye/biodynamic-wines.html?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
             target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
-            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
-              <tr>
-                <td style="width: 50%; text-align: right;">
-                  <img
-                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/85075a0e-28e4-44bb-9275-88e0e8ebbb75.png"
-                    alt="Дивись вправо" style="width: 91px;height: 18px;" />
-                </td>
-                <td style="width: 50%; padding-left: 20px;">
-                  <span
-                    style="color: #b65830 !important ;font-weight: 700;font-size: 60px;line-height: 120%;">біодинамічні</span>
-                </td>
-              </tr>
-            </table>
+            <img
+              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/34a9802d-6b5a-467d-bfde-7561526454a8.png"
+              alt="Біодинамічні вина" style="width: 100%;" />
+          </a>
+        </td>
+        <td class="mobile" style="display: none; padding: 0 11px 6px;text-align: center;">
+          <a href="https://goodwine.com.ua/ua/vino/osobennye/biodynamic-wines.html?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
+            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+            <img src="assets/layout5/біодинамічні-вина-mobile.png" alt="Біодинамічні вина" style="width: 354px;" />
           </a>
         </td>
       </tr>
       <tr>
-        <td class="bg-light-black-d-m" style="text-align: center;padding: 0 38px 7px;">
+        <td class="desktop tablet" style="padding: 0 11px 6px;">
           <a href="https://goodwine.com.ua/ua/vino/osobennye/koshernye-vina.html?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
             target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
-            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
-              <tr>
-                <td style="padding-right: 10px; text-align: right;">
-                  <p
-                    style="display: inline-block; color: #a21b17 !important;font-weight: 700;font-size: 35px;line-height: 120%; text-align: left;">
-                    <span style="white-space: nowrap;color: #a21b17 !important;">кошерні вина з Європи</span>
-                    <br>
-                    та Америки.
-                  </p>
-                </td>
-                <td style="text-align: right;">
-                  <img
-                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/5ed28a38-b291-4fb3-a6cc-8f3f1d469678.png"
-                    alt="Дивись вліво" style="width: 62px;height: 18px;" />
-                </td>
-              </tr>
-            </table>
+            <img src="assets/layout5/кошерні-вина.png" alt="Кошерні вина" style="width: 100%;" />
+          </a>
+        </td>
+        <td class="mobile" style="display: none; padding: 0 11px 6px;text-align: center;">
+          <a href="https://goodwine.com.ua/ua/vino/osobennye/koshernye-vina.html?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
+            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
+            <img src="assets/layout5/кошерні-вина-mobile.png" alt="Кошерні вина" style="width: 354px;" />
           </a>
         </td>
       </tr>
       <tr>
-        <td style="padding: 60px 15px;">
+        <td class="desktop tablet" style="padding: 60px 15px;">
           <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
             <tr>
               <td style="width: 60%; text-align: right;">
@@ -445,7 +481,7 @@
                   style="color: inherit; font-family: inherit; text-decoration: none;">
                   <img
                     src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/c845005f-0e6d-4862-bdd6-de66482ff0db.png"
-                    alt="Додаток goodwine" style="width: 290px;height: 585px;" />
+                    alt="Телефон" style="width: 290px;height: 585px;" />
                 </a>
               </td>
               <td style="padding-left: 20px;">
@@ -462,9 +498,10 @@
                   </tr>
                   <tr>
                     <td style="padding-bottom: 36px;text-align: center;">
-                      <img
-                        src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/8edf8a26-7871-447b-ab5a-1ac9607bfcb7.jpg"
-                        alt="Скануйте додаток" style="height: 75px; width: 153px;" />
+                      <p
+                        style="max-width: 153px;font-size: 14px;display: inline-block;text-align: left;padding-left: 5px;box-sizing: border-box;">
+                        *тож не забувайте сканувати додаток, щоб ми розуміли що вам подобається.
+                      </p>
                     </td>
                   </tr>
                   <tr>
@@ -492,29 +529,74 @@
             </tr>
           </table>
         </td>
-      </tr>
-      <tr>
-        <td style="padding: 22px 15px; text-align: center">
-          <p style="display: inline-block;">
-            І нагадаємо про переваги <br> системи лояльності
-            <span style="font-weight: 700;">goodwine:</span>
-          </p>
+        <td class="mobile" style="padding: 60px 15px 43px; display: none;">
+          <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+            <tr>
+              <td style="text-align: center;padding-bottom: 20px;">
+                <a href="http://onelink.to/vsqrca" target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/c845005f-0e6d-4862-bdd6-de66482ff0db.png"
+                    alt="Телефон" style="width: 290px;height: 585px;" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;padding-bottom: 43px;">
+                <a href="http://onelink.to/vsqrca" target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/700e9c97-64ea-43f9-80f4-fe10fc7e323a.png"
+                    alt="Goodwine" style="height: 97px; width: 97px;" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;padding-bottom: 43px;">
+                <p style="max-width: 270px;font-size: 14px;display: inline-block;text-align: left;">
+                  *тож не забувайте сканувати додаток, щоб ми розуміли що вам подобається.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;padding-bottom: 21px;">
+                <a href="http://onelink.to/vsqrca" target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/af8cf84a-21d8-4072-91b2-716a9cb4f1c1.jpg"
+                    alt="Google Play" style="height: 48px; width: 142px;" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">
+                <a href="http://onelink.to/vsqrca" target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img
+                    src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/597c9ed6-1325-42c5-a0b1-f62fb962d5d1.jpg"
+                    alt="App Store" style="height: 48px; width: 142px;" />
+                </a>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
+      <!-- Переваги системи лояльності -->
       <tr>
-        <td>
+        <td class="desktop tablet">
           <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
             <tr>
               <td style="text-align: center;">
                 <img
                   src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/72aae662-0668-4a2b-9f21-746f02305395.png"
-                  alt="Зараз ваш рівень GREEN" style="height: 342px; width: 305px;" />
+                  alt="Зараз ваш рівень GREEN" style="width: 100%;" />
               </td>
-              <td style="padding: 40px 5px 43px 0;">
+              <td style="padding: 40px 0 43px 0;">
                 <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;text-align: center;width: 300px;">
                   <tr>
                     <td style="padding-bottom: 23px;">
-                      <p style="color: #1b1b1b;font-weight: 700;text-align: left;">Наступний рівень передбачає:</p>
+                      <p style="color: #1b1b1b;font-weight: 700;text-align: left;">Наступний рівень передбачає:
+                      </p>
                     </td>
                   </tr>
                   <tr>
@@ -523,13 +605,13 @@
                         <tr>
                           <td style="padding-right: 13px;">
                             <span
-                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #eec352; border-radius: 50%;border: 1px solid #eec352;">
+                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #f06e3d; border-radius: 50%;border: 1px solid #f06e3d;">
                               <table cellpadding="0" cellspacing="0" border="0"
                                 style="border-radius: inherit;text-align: center;margin: 0 auto;height: 38px;width: 38px;">
                                 <tr>
                                   <td>
                                     <span
-                                      style="font-size: 20px;color: #000000 !important;font-family: 'Circe', 'Arial';">1</span>
+                                      style="font-size: 20px;color: #ffffff !important;font-family: 'Circe', 'Arial';">1</span>
                                   </td>
                                 </tr>
                               </table>
@@ -552,13 +634,13 @@
                         <tr>
                           <td style="padding-right: 13px;">
                             <span
-                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #eec352; border-radius: 50%;border: 1px solid #eec352;">
+                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #f06e3d; border-radius: 50%;border: 1px solid #f06e3d;">
                               <table cellpadding="0" cellspacing="0" border="0"
                                 style="border-radius: inherit;text-align: center;margin: 0 auto;height: 38px;width: 38px;">
                                 <tr>
                                   <td>
                                     <span
-                                      style="font-size: 20px;color: #000000 !important;font-family: 'Circe', 'Arial';">2</span>
+                                      style="font-size: 20px;color: #ffffff !important;font-family: 'Circe', 'Arial';">2</span>
                                   </td>
                                 </tr>
                               </table>
@@ -579,13 +661,13 @@
                         <tr>
                           <td style="padding-right: 13px;">
                             <span
-                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #eec352; border-radius: 50%;border: 1px solid #eec352;">
+                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #f06e3d; border-radius: 50%;border: 1px solid #f06e3d;">
                               <table cellpadding="0" cellspacing="0" border="0"
                                 style="border-radius: inherit;text-align: center;margin: 0 auto;height: 38px;width: 38px;">
                                 <tr>
                                   <td>
                                     <span
-                                      style="font-size: 20px;color: #000000 !important;font-family: 'Circe', 'Arial';">3</span>
+                                      style="font-size: 20px;color: #ffffff !important;font-family: 'Circe', 'Arial';">3</span>
                                   </td>
                                 </tr>
                               </table>
@@ -608,13 +690,150 @@
                         <tr>
                           <td style="padding-right: 13px;">
                             <span
-                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #eec352; border-radius: 50%;border: 1px solid #eec352;">
+                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #f06e3d; border-radius: 50%;border: 1px solid #f06e3d;">
                               <table cellpadding="0" cellspacing="0" border="0"
                                 style="border-radius: inherit;text-align: center;margin: 0 auto;height: 38px;width: 38px;">
                                 <tr>
                                   <td>
                                     <span
-                                      style="font-size: 20px;color: #000000 !important;font-family: 'Circe', 'Arial';">4</span>
+                                      style="font-size: 20px;color: #ffffff !important;font-family: 'Circe', 'Arial';">4</span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </span>
+                          </td>
+                          <td>
+                            <p style="color: #1b1b1b;font-family: 'Circe', 'Arial';text-align: left;">
+                              <span style="white-space: nowrap;">15% знижки на вино тижня</span>
+                              <br>
+                              <span style="white-space: nowrap;">(замість 10%)</span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="mobile" style="display: none;">
+          <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
+            <tr>
+              <td style="text-align: center;">
+                <img
+                  src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/72aae662-0668-4a2b-9f21-746f02305395.png"
+                  alt="Зараз ваш рівень GREEN" style="width: 375px;" />
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0 30px 43px;">
+                <table cellpadding="0" cellspacing="0" border="0"
+                  style="width: 100%;text-align: center;max-width: 325px; margin: 0 auto;">
+                  <tr>
+                    <td style="padding-bottom: 23px;">
+                      <p style="color: #1b1b1b;font-weight: 700;text-align: center;">Наступний рівень передбачає:
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 17px;">
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td style="padding-right: 13px;">
+                            <span
+                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #f06e3d; border-radius: 50%;border: 1px solid #f06e3d;">
+                              <table cellpadding="0" cellspacing="0" border="0"
+                                style="border-radius: inherit;text-align: center;margin: 0 auto;height: 38px;width: 38px;">
+                                <tr>
+                                  <td>
+                                    <span
+                                      style="font-size: 20px;color: #ffffff !important;font-family: 'Circe', 'Arial';">1</span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </span>
+                          </td>
+                          <td>
+                            <p style="color: #1b1b1b;font-family: 'Circe', 'Arial';text-align: left;">
+                              <span style="white-space: nowrap;">5% знижки на алкоголь</span>
+                              <span style="white-space: nowrap;">(замість 3%)</span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 17px;">
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td style="padding-right: 13px;">
+                            <span
+                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #f06e3d; border-radius: 50%;border: 1px solid #f06e3d;">
+                              <table cellpadding="0" cellspacing="0" border="0"
+                                style="border-radius: inherit;text-align: center;margin: 0 auto;height: 38px;width: 38px;">
+                                <tr>
+                                  <td>
+                                    <span
+                                      style="font-size: 20px;color: #ffffff !important;font-family: 'Circe', 'Arial';">2</span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </span>
+                          </td>
+                          <td>
+                            <p style="color: #1b1b1b;font-family: 'Circe', 'Arial';text-align: left;">
+                              <span style="white-space: nowrap;">Подарунки з нагоди та без</span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 17px;">
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td style="padding-right: 13px;">
+                            <span
+                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #f06e3d; border-radius: 50%;border: 1px solid #f06e3d;">
+                              <table cellpadding="0" cellspacing="0" border="0"
+                                style="border-radius: inherit;text-align: center;margin: 0 auto;height: 38px;width: 38px;">
+                                <tr>
+                                  <td>
+                                    <span
+                                      style="font-size: 20px;color: #ffffff !important;font-family: 'Circe', 'Arial';">3</span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </span>
+                          </td>
+                          <td>
+                            <p style="color: #1b1b1b;font-family: 'Circe', 'Arial';text-align: left;">
+                              <span style="white-space: nowrap;">Персональні знижки до 20%</span>
+                              <br>
+                              <span style="white-space: nowrap;">на вподобані категорії / бренди</span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 17px;">
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td style="padding-right: 13px;">
+                            <span
+                              style="font-family: 'Circe', 'Arial'; overflow: hidden;display: inline-block;text-align: center; background-color: #f06e3d; border-radius: 50%;border: 1px solid #f06e3d;">
+                              <table cellpadding="0" cellspacing="0" border="0"
+                                style="border-radius: inherit;text-align: center;margin: 0 auto;height: 38px;width: 38px;">
+                                <tr>
+                                  <td>
+                                    <span
+                                      style="font-size: 20px;color: #ffffff !important;font-family: 'Circe', 'Arial';">4</span>
                                   </td>
                                 </tr>
                               </table>
@@ -639,16 +858,122 @@
       </tr>
       <tr>
         <td>
+          <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;background-color: #eec352;">
+            <tr>
+              <td class="amount-block" style="text-align: right;padding: 48px 0;">
+                <p style="display: inline-block; font-weight: 700;text-align: center; padding: 0 10px;">
+                  Щоб перейти <span style="color: #f36d3a !important;">на наступний рівень</span>, <br>
+                  необхідно здійснити покупки <br>
+                  <br>
+                  <br>
+                  <br>
+                  <span style="font-size: 30px;">НА СУМУ</span>
+                  <span style="font-size: 30px;font-weight: 700;color: #ffffff;"> ХХХX UAH</span>
+                </p>
+              </td>
+              <td class="desktop" style="padding: 48px 0 48px 20px; vertical-align: bottom;">
+                <img src="assets/layout5/стрілка-вліво-біла.png" alt="" style="width: 62px;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
           <table cellpadding="0" cellspacing="0" border="0"
             style="width: 100%;background-color: #1b1b1b;background-image:url(https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/8e6e2dd5-0db5-4ad9-9835-40eb8cdf94f8.png);">
             <tr>
-              <td style="text-align: center;padding: 42px 15px;">
-                <p class="white-text-on-dark" style="color: #eec352 !important;display: inline-block;">
-                  Щоб перейти на наступний рівень, <br>
-                  необхідно здійснити покупки <br>
-                  <br>
-                  <span class="white-text-on-dark" style="font-weight: 700;color: #ffffff;">на суму ХХХX
-                    UAH</span>
+              <td style="text-align: center; padding: 39px 26px 10px;">
+                <p
+                  style="font-size: 58px; line-height: normal; display: inline-block; font-weight: 700; max-width: 376px;text-align: justify; color: #e6e6e6;">
+                  <span style="white-space: nowrap;">А що взяти</span>
+                  <span style="white-space: nowrap;">окрім вина ?</span>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center; padding: 0 15px 32px;">
+                <p style="display: inline-block;color: #e6e6e6;">
+                  Зверніть увагу на наші топвідділи:
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="desktop tablet" style="text-align: center; padding-bottom: 20px;">
+                <a href="https://goodwine.ua/templates/bakaliya/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img src="assets/layout5/бакалія.jpg" alt="Бакалія" style="width: 100%;" />
+                </a>
+              </td>
+              <td class="mobile" style="display: none; text-align: center; padding-bottom: 20px;">
+                <a href="https://goodwine.ua/templates/bakaliya/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img src="assets/layout5/бакалія-mobile.jpg" alt="Бакалія" style="width: 100%;" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p
+                  style="color: #ffffff;letter-spacing: 1.5px;max-width: 534px;margin: 0 auto;text-align: center;box-sizing: border-box;padding: 0 18px 35px;">
+                  Вибираємо продукти, чий склад не викликає запитань. Привозимо традиційні продукти з регіонів
+                  походження: гірчиця з
+                  Діжону, бальзамічний оцет із Модени, паста
+                  з Гарн’яно, джеми із Шотландії.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="desktop tablet" style="text-align: center; padding-bottom: 20px;">
+                <a href="https://goodwine.ua/templates/yellow-place/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img src="assets/layout5/yellow place.jpg" alt="Yellow Place" style="width: 100%;" />
+                </a>
+              </td>
+              <td class="mobile" style="display: none; text-align: center; padding-bottom: 20px;">
+                <a href="https://goodwine.ua/templates/yellow-place/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img src="assets/layout5/yellow-place-mobile.jpg" alt="Yellow Place" style="width: 100%;" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p
+                  style="color: #ffffff;letter-spacing: 1.5px;max-width: 534px;margin: 0 auto;text-align: center;box-sizing: border-box;padding: 0 18px 35px;">
+                  Імпортер фермерської кави, ростері, дві кав’ярні та Coffee Wall (100 різних смаків кави на одній
+                  полиці від різних
+                  обсмажчиків)
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="desktop tablet" style="text-align: center; padding-bottom: 20px;">
+                <a href="https://goodwine.ua/templates/bakaliya/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img src="assets/layout5/солодощі.jpg" alt="Солодощі" style="width: 100%;" />
+                </a>
+              </td>
+              <td class="mobile" style="display: none; text-align: center; padding-bottom: 20px;">
+                <a href="https://goodwine.ua/templates/bakaliya/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
+                  target="_blank" mc-deep-link="false"
+                  style="color: inherit; font-family: inherit; text-decoration: none;">
+                  <img src="assets/layout5/солодощі-mobile.jpg" alt="Солодощі" style="width: 100%;" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p
+                  style="color: #ffffff;letter-spacing: 1.5px;max-width: 534px;margin: 0 auto;text-align: center;box-sizing: border-box;padding: 0 18px 35px;">
+                  Унікальний шоколад від органічних raw, fair trade та bean to bar брендів. Також у цьому відділі ви
+                  знайдете окремий
+                  корнер бельгійського шоколаду Neuhaus.
                 </p>
               </td>
             </tr>
@@ -656,53 +981,7 @@
         </td>
       </tr>
       <tr>
-        <td style="text-align: center; padding-top: 37px;">
-          <p
-            style="font-size: 58px; line-height: normal; display: inline-block; font-weight: 700; max-width: 376px;text-align: justify;">
-            <span style="white-space: nowrap;">А що взяти</span>
-            <span style="white-space: nowrap;">окрім вина ?</span>
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td style="text-align: center; padding: 37px 15px;">
-          <p style="display: inline-block;">
-            Зверніть увагу на наші топвідділи:
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td style="text-align: center; padding-bottom: 10px;">
-          <a href="" target="_blank" mc-deep-link="false"
-            style="color: inherit; font-family: inherit; text-decoration: none;">
-            <img
-              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/e52de5dc-a515-4e3d-80a0-cce149ba8a7e.jpg"
-              alt="Кулінарія" style="width: 600px;height: 258px;" />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td style="text-align: center; padding-bottom: 10px;">
-          <a href="https://goodwine.ua/templates/yellow-place/?utm_source=info&utm_medium=email&utm_campaign=welcome_trigger_5_20k_alcohol_ online_green_to_gold"
-            target="_blank" mc-deep-link="false" style="color: inherit; font-family: inherit; text-decoration: none;">
-            <img
-              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/d5f8e79a-e405-4314-9080-59f5cacbae3a.jpg"
-              alt="Yellow Place" style="width: 600px;height: 258px;" />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td style="text-align: center; padding-bottom: 10px;">
-          <a href="" target="_blank" mc-deep-link="false"
-            style="color: inherit; font-family: inherit; text-decoration: none;">
-            <img
-              src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/ada061b3-ffba-42cb-94cd-fe1b034e5898.jpg"
-              alt="Овочі та фрукти" style="width: 600px;height: 258px;" />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td style="text-align: center; padding: 21px 15px;">
+        <td style="text-align: center; padding: 21px 10px;">
           <p style="display: inline-block;">
             Заходьте до goodwine, <br>
             а також замовляйте доставку вина і продуктів
