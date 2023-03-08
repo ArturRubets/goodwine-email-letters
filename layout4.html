@@ -147,6 +147,17 @@
       text-decoration: none !important;
     }
 
+    .justify {
+      text-align: justify !important;
+      text-align-last: justify !important;
+    }
+
+    .justify:after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+    }
+
     @media screen and (max-width: 768px) {
       .desktop {
         display: none !important;
@@ -194,6 +205,7 @@
       }
 
       .text-4 {
+        font-size: 45px !important;
         max-width: 322px !important;
       }
     }
@@ -274,7 +286,7 @@
             style="width: 100%;background-color: #1b1b1b;background-image:url(https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/8e6e2dd5-0db5-4ad9-9835-40eb8cdf94f8.png);">
             <tr>
               <td style="text-align: center;padding: 15px 15px 24px;">
-                <p style="color: #ffffff;display: inline-block;">
+                <p class="white-text-on-dark" style="color: #ffffff;display: inline-block;">
                   <span style="white-space: nowrap;">Все та ж система порахувала, що</span>
                   <br>
                   <span style="font-size: 16px; font-weight: 700;color: #ffffff;white-space: nowrap;">на алкоголь ви
@@ -284,7 +296,8 @@
             </tr>
             <tr>
               <td style="text-align: center;padding: 0 15px 15px;">
-                <span style="font-size: 16px; font-weight: 400;color: #ffffff;line-height: 19px;">ХХХХX
+                <span class="white-text-on-dark"
+                  style="font-size: 16px; font-weight: 400;color: #ffffff;line-height: 19px;">ХХХХX
                   UAH</span>
               </td>
             </tr>
@@ -906,15 +919,12 @@
         </td>
       </tr>
       <tr>
-        <td class="remove-el-d-m" style="padding: 39px 15px 10px;text-align: center;">
-          <img class="text-4"
-            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/b38846a6-269d-439a-b165-a1dff79c6429.png"
-            alt="А що взяти окрім вина ?" style="width: 100%;max-width: 376px;color: #ffffff;">
-        </td>
-        <td class="show-table-cell-d-m" style="display: none; padding: 39px 15px 10px;text-align: center;">
-          <img class="text-4"
-            src="https://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/8/a5498176-cb60-4b98-9c6f-9dcc6434b5f1.png"
-            alt="А що взяти окрім вина ?" style="width: 100%;max-width: 376px;color: #ffffff;">
+        <td style="padding: 39px 15px 10px;">
+          <p class="text-4 justify"
+            style="font-size: 58px; line-height: normal;font-weight: 700; max-width: 376px;margin: 0 auto;">
+            <span style="white-space: nowrap;">А що взяти</span>
+            <span style="white-space: nowrap;">окрім вина ?</span>
+          </p>
         </td>
       </tr>
       <tr>
